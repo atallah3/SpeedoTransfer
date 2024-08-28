@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */; };
+		F7FAF7382C7E27DF0057B655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7372C7E27DF0057B655 /* SceneDelegate.swift */; };
+		F7FAF73D2C7E27DF0057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73C2C7E27DF0057B655 /* Base */; };
+		F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73E2C7E27E10057B655 /* Assets.xcassets */; };
+		F7FAF7422C7E27E10057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7412C7E27E10057B655 /* Base */; };
+		F7FAF78C2C7E3A200057B655 /* Inter_18pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7562C7E3A200057B655 /* Inter_18pt-ExtraBold.ttf */; };
+		F7FAF7942C7E3A200057B655 /* Inter_18pt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF75E2C7E3A200057B655 /* Inter_18pt-Regular.ttf */; };
+		F7FAF7962C7E3A200057B655 /* Inter_18pt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7602C7E3A200057B655 /* Inter_18pt-SemiBold.ttf */; };
+		F7FAF79B2C7E3A200057B655 /* Inter_18pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7652C7E3A200057B655 /* Inter_18pt-Bold.ttf */; };
+		F7FAF79E2C7E3A200057B655 /* Inter_18pt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7682C7E3A200057B655 /* Inter_18pt-Medium.ttf */; };
+		F7FAF7A72C7E3A200057B655 /* Inter_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7712C7E3A200057B655 /* Inter_18pt-ExtraLight.ttf */; };
+		F7FAF7AC2C7E3A200057B655 /* Inter_18pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7762C7E3A200057B655 /* Inter_18pt-Thin.ttf */; };
+		F7FAF7B22C7E3A200057B655 /* Inter_18pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF77C2C7E3A200057B655 /* Inter_18pt-Light.ttf */; };
+		F7FAF7B72C7E48A40057B655 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7B62C7E48A40057B655 /* RegisterVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedoTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7FAF7372C7E27DF0057B655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7FAF73C2C7E27DF0057B655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7FAF73E2C7E27E10057B655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7FAF7412C7E27E10057B655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7FAF7432C7E27E10057B655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FAF7562C7E3A200057B655 /* Inter_18pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F7FAF75E2C7E3A200057B655 /* Inter_18pt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-Regular.ttf"; sourceTree = "<group>"; };
+		F7FAF7602C7E3A200057B655 /* Inter_18pt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-SemiBold.ttf"; sourceTree = "<group>"; };
+		F7FAF7652C7E3A200057B655 /* Inter_18pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-Bold.ttf"; sourceTree = "<group>"; };
+		F7FAF7682C7E3A200057B655 /* Inter_18pt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-Medium.ttf"; sourceTree = "<group>"; };
+		F7FAF7712C7E3A200057B655 /* Inter_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F7FAF7762C7E3A200057B655 /* Inter_18pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-Thin.ttf"; sourceTree = "<group>"; };
+		F7FAF77C2C7E3A200057B655 /* Inter_18pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-Light.ttf"; sourceTree = "<group>"; };
+		F7FAF7B62C7E48A40057B655 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7FAF72F2C7E27DF0057B655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7FAF7292C7E27DF0057B655 = {
+			isa = PBXGroup;
+			children = (
+				F7FAF7342C7E27DF0057B655 /* SpeedoTransfer */,
+				F7FAF7332C7E27DF0057B655 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7FAF7332C7E27DF0057B655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7FAF7342C7E27DF0057B655 /* SpeedoTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				F7FAF7432C7E27E10057B655 /* Info.plist */,
+				F7FAF7492C7E39BA0057B655 /* Fonts */,
+				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
+				F7FAF7372C7E27DF0057B655 /* SceneDelegate.swift */,
+				F7FAF73B2C7E27DF0057B655 /* Main.storyboard */,
+				F7FAF7B62C7E48A40057B655 /* RegisterVC.swift */,
+				F7FAF73E2C7E27E10057B655 /* Assets.xcassets */,
+				F7FAF7402C7E27E10057B655 /* LaunchScreen.storyboard */,
+			);
+			path = SpeedoTransfer;
+			sourceTree = "<group>";
+		};
+		F7FAF7492C7E39BA0057B655 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7FAF7652C7E3A200057B655 /* Inter_18pt-Bold.ttf */,
+				F7FAF7562C7E3A200057B655 /* Inter_18pt-ExtraBold.ttf */,
+				F7FAF7712C7E3A200057B655 /* Inter_18pt-ExtraLight.ttf */,
+				F7FAF77C2C7E3A200057B655 /* Inter_18pt-Light.ttf */,
+				F7FAF7682C7E3A200057B655 /* Inter_18pt-Medium.ttf */,
+				F7FAF75E2C7E3A200057B655 /* Inter_18pt-Regular.ttf */,
+				F7FAF7602C7E3A200057B655 /* Inter_18pt-SemiBold.ttf */,
+				F7FAF7762C7E3A200057B655 /* Inter_18pt-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7FAF7312C7E27DF0057B655 /* SpeedoTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FAF7462C7E27E10057B655 /* Build configuration list for PBXNativeTarget "SpeedoTransfer" */;
+			buildPhases = (
+				F7FAF72E2C7E27DF0057B655 /* Sources */,
+				F7FAF72F2C7E27DF0057B655 /* Frameworks */,
+				F7FAF7302C7E27DF0057B655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedoTransfer;
+			productName = SpeedoTransfer;
+			productReference = F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7FAF72A2C7E27DF0057B655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F7FAF7312C7E27DF0057B655 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = F7FAF72D2C7E27DF0057B655 /* Build configuration list for PBXProject "SpeedoTransfer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7FAF7292C7E27DF0057B655;
+			productRefGroup = F7FAF7332C7E27DF0057B655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7FAF7312C7E27DF0057B655 /* SpeedoTransfer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7FAF7302C7E27DF0057B655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */,
+				F7FAF78C2C7E3A200057B655 /* Inter_18pt-ExtraBold.ttf in Resources */,
+				F7FAF7A72C7E3A200057B655 /* Inter_18pt-ExtraLight.ttf in Resources */,
+				F7FAF79B2C7E3A200057B655 /* Inter_18pt-Bold.ttf in Resources */,
+				F7FAF7AC2C7E3A200057B655 /* Inter_18pt-Thin.ttf in Resources */,
+				F7FAF79E2C7E3A200057B655 /* Inter_18pt-Medium.ttf in Resources */,
+				F7FAF7422C7E27E10057B655 /* Base in Resources */,
+				F7FAF7B22C7E3A200057B655 /* Inter_18pt-Light.ttf in Resources */,
+				F7FAF7962C7E3A200057B655 /* Inter_18pt-SemiBold.ttf in Resources */,
+				F7FAF73D2C7E27DF0057B655 /* Base in Resources */,
+				F7FAF7942C7E3A200057B655 /* Inter_18pt-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7FAF72E2C7E27DF0057B655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FAF7B72C7E48A40057B655 /* RegisterVC.swift in Sources */,
+				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
+				F7FAF7382C7E27DF0057B655 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F7FAF73B2C7E27DF0057B655 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7FAF73C2C7E27DF0057B655 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7FAF7402C7E27E10057B655 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7FAF7412C7E27E10057B655 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7FAF7442C7E27E10057B655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7FAF7452C7E27E10057B655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7FAF7472C7E27E10057B655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F6FZV8L79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedoTransfer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atallah.SpeedoTransfer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F7FAF7482C7E27E10057B655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2F6FZV8L79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedoTransfer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atallah.SpeedoTransfer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7FAF72D2C7E27DF0057B655 /* Build configuration list for PBXProject "SpeedoTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FAF7442C7E27E10057B655 /* Debug */,
+				F7FAF7452C7E27E10057B655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FAF7462C7E27E10057B655 /* Build configuration list for PBXNativeTarget "SpeedoTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7FAF7472C7E27E10057B655 /* Debug */,
+				F7FAF7482C7E27E10057B655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7FAF72A2C7E27DF0057B655 /* Project object */;
+}
