@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D2D080F2C80912500CB4167 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D080E2C80912400CB4167 /* Inter.ttc */; };
-		0D2D08112C80913E00CB4167 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D08102C80913E00CB4167 /* web */; };
+		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -77,8 +76,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D2D080E2C80912400CB4167 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
-		0D2D08102C80913E00CB4167 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = web; path = "../../../../Downloads/Inter-4.0/web"; sourceTree = "<group>"; };
+		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -270,8 +268,7 @@
 		F7FAF7492C7E39BA0057B655 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				0D2D08102C80913E00CB4167 /* web */,
-				0D2D080E2C80912400CB4167 /* Inter.ttc */,
+				0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */,
 				F73C1B612C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf */,
 				F73C1B712C7F2C7200A5A2C6 /* Inter_18pt-BlackItalic.ttf */,
 				F73C1B512C7F2C7100A5A2C6 /* Inter_18pt-Bold.ttf */,
@@ -400,6 +397,7 @@
 				F73C1BA72C7F2C7200A5A2C6 /* Inter_18pt-BlackItalic.ttf in Resources */,
 				F73C1B8C2C7F2C7200A5A2C6 /* Inter_18pt-ThinItalic.ttf in Resources */,
 				F73C1B872C7F2C7200A5A2C6 /* Inter_18pt-Bold.ttf in Resources */,
+				0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */,
 				F73C1B7B2C7F2C7200A5A2C6 /* Inter_28pt-SemiBoldItalic.ttf in Resources */,
 				F73C1B912C7F2C7200A5A2C6 /* Inter_28pt-Black.ttf in Resources */,
 				F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */,
@@ -440,12 +438,10 @@
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
 				F7FAF73D2C7E27DF0057B655 /* Base in Resources */,
 				F73C1B7C2C7F2C7200A5A2C6 /* Inter_24pt-LightItalic.ttf in Resources */,
-				0D2D08112C80913E00CB4167 /* web in Resources */,
 				F73C1B972C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
 				F73C1B942C7F2C7200A5A2C6 /* Inter_24pt-ExtraBold.ttf in Resources */,
 				F73C1BA42C7F2C7200A5A2C6 /* Inter_28pt-BoldItalic.ttf in Resources */,
-				0D2D080F2C80912500CB4167 /* Inter.ttc in Resources */,
 				F73C1B932C7F2C7200A5A2C6 /* Inter_28pt-SemiBold.ttf in Resources */,
 				F73C1B842C7F2C7200A5A2C6 /* Inter_18pt-ExtraBoldItalic.ttf in Resources */,
 				F73C1BA92C7F2C7200A5A2C6 /* Inter_18pt-LightItalic.ttf in Resources */,
