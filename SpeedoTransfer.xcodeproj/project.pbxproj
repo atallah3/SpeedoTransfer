@@ -10,6 +10,8 @@
 		0D39A98C2C818BB900C63F69 /* Country&DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A98B2C818BB900C63F69 /* Country&DateVC.swift */; };
 		0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
+		0DB883542C819BE600A487BE /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB883532C819BE600A487BE /* Error.storyboard */; };
+		0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883552C819C3D00A487BE /* Error404VC.swift */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -83,6 +85,8 @@
 		0D39A98B2C818BB900C63F69 /* Country&DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country&DateVC.swift"; sourceTree = "<group>"; };
 		0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
+		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
+		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -173,6 +177,31 @@
 				F73C1BFC2C809F1E00A5A2C6 /* Views */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0D39A9912C819AA500C63F69 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0D39A9932C819AC700C63F69 /* Controllers */,
+				0D39A9922C819AB300C63F69 /* View */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0D39A9922C819AB300C63F69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DB883532C819BE600A487BE /* Error.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D39A9932C819AC700C63F69 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DB883552C819C3D00A487BE /* Error404VC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F73C1B3E2C7F2B8500A5A2C6 /* Support */ = {
@@ -274,6 +303,7 @@
 		F7FAF7342C7E27DF0057B655 /* SpeedoTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				0D39A9912C819AA500C63F69 /* Error */,
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
 				F7FAF73B2C7E27DF0057B655 /* Main.storyboard */,
@@ -445,6 +475,7 @@
 				F73C1B7F2C7F2C7200A5A2C6 /* Inter_24pt-Regular.ttf in Resources */,
 				F73C1B8E2C7F2C7200A5A2C6 /* Inter_24pt-BoldItalic.ttf in Resources */,
 				F73C1BA62C7F2C7200A5A2C6 /* Inter_24pt-BlackItalic.ttf in Resources */,
+				0DB883542C819BE600A487BE /* Error.storyboard in Resources */,
 				F73C1B812C7F2C7200A5A2C6 /* Inter_18pt-Italic.ttf in Resources */,
 				F73C1B862C7F2C7200A5A2C6 /* Inter_28pt-ThinItalic.ttf in Resources */,
 				F73C1B992C7F2C7200A5A2C6 /* Inter_18pt-Regular.ttf in Resources */,
@@ -483,6 +514,7 @@
 				F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
+				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
 				0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
 			);
