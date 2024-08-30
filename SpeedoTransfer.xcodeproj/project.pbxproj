@@ -12,6 +12,7 @@
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		0DB883542C819BE600A487BE /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB883532C819BE600A487BE /* Error.storyboard */; };
 		0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883552C819C3D00A487BE /* Error404VC.swift */; };
+		0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883572C81A2A400A487BE /* NoInternetVC.swift */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -87,6 +88,7 @@
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
+		0DB883572C81A2A400A487BE /* NoInternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetVC.swift; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				0DB883552C819C3D00A487BE /* Error404VC.swift */,
+				0DB883572C81A2A400A487BE /* NoInternetVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
+				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
 				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
 				0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
