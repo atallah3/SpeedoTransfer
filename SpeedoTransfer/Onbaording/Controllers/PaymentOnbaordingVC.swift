@@ -11,11 +11,12 @@ class PaymentOnbaordingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavBarHidden()
+        configureViewController()
         
     }
     
-    private func setNavBarHidden() {
+    private func configureViewController() {
+        view.addGradientBackgroundColor()
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
