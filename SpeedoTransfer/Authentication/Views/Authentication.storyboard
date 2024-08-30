@@ -90,10 +90,6 @@
                                 <rect key="frame" x="336" y="469" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Component 2" translatesAutoresizingMaskIntoConstraints="NO" id="sbc-44-15J">
-                                <rect key="frame" x="336" y="567" width="24" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="f7O-s2-LW7">
                                 <rect key="frame" x="336" y="377" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,16 +108,16 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Yw-Pj-Fwk">
-                                <rect key="frame" x="66" y="722" width="265.33333333333331" height="35.333333333333371"/>
+                                <rect key="frame" x="66" y="722" width="267" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40J-eH-kI3">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="35.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.53725490200000003" green="0.53333333329999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyD-CB-e1w">
-                                        <rect key="frame" x="185.66666666666666" y="0.0" width="79.666666666666657" height="35.333333333333336"/>
+                                        <rect key="frame" x="185.66666666666666" y="0.0" width="81.333333333333343" height="37"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -137,6 +133,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Component 2" translatesAutoresizingMaskIntoConstraints="NO" id="sbc-44-15J">
+                                <rect key="frame" x="336" y="567" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GmJ-kh-GQY"/>
                         <color key="backgroundColor" name="lightRedGradient"/>
@@ -145,15 +145,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hoI-eo-M3z"/>
+                    <connections>
+                        <outlet property="SignUPBtn" destination="WTq-8I-6bc" id="pe9-0y-d7h"/>
+                        <outlet property="confirmPasswordEyeImageView" destination="sbc-44-15J" id="RHf-v4-2nR"/>
+                        <outlet property="confirmPasswordTextField" destination="123-JJ-k0X" id="3Q7-8h-Exs"/>
+                        <outlet property="emailTextField" destination="TM6-kx-IIE" id="fvg-qd-aaq"/>
+                        <outlet property="fullNameTextField" destination="sw0-nw-jy8" id="Y9I-Bg-VMF"/>
+                        <outlet property="passwordEyeImageView" destination="evT-0t-QSL" id="oKp-ho-QXS"/>
+                        <outlet property="passwordTextField" destination="30e-nh-Tru" id="Lrl-MN-nAD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrx-en-4Bo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1017.5572519083969" y="0.70422535211267612"/>
         </scene>
-        <!--Country DateVC-->
+        <!--Country And DateVC-->
         <scene sceneID="dcc-IH-jPK">
             <objects>
-                <viewController storyboardIdentifier="Country_DateVC" id="uTT-k8-323" customClass="Country_DateVC" customModule="SpeedoTransfer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountryAndDateVC" id="uTT-k8-323" customClass="CountryAndDateVC" customModule="SpeedoTransfer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAa-Zj-NWR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,16 +237,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-xU-RSw">
-                                <rect key="frame" x="66" y="728" width="265.33333333333331" height="35.333333333333371"/>
+                                <rect key="frame" x="66" y="728" width="267" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YH0-Rz-KTQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="35.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.53725490200000003" green="0.53333333329999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4m-Gw-RFu">
-                                        <rect key="frame" x="185.66666666666666" y="0.0" width="79.666666666666657" height="35.333333333333336"/>
+                                        <rect key="frame" x="185.66666666666666" y="0.0" width="81.333333333333343" height="37"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">
@@ -326,16 +335,16 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aon-3L-3eW">
-                                <rect key="frame" x="66" y="562" width="272.66666666666669" height="35.333333333333371"/>
+                                <rect key="frame" x="66" y="562" width="276.33333333333331" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9y-cK-OTV">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="35.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.53725490200000003" green="0.53333333329999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8f-hh-8G5">
-                                        <rect key="frame" x="185.66666666666666" y="0.0" width="86.999999999999972" height="35.333333333333336"/>
+                                        <rect key="frame" x="185.66666666666666" y="0.0" width="90.666666666666657" height="37"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <attributedString key="attributedTitle">

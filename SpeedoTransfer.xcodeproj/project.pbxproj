@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D39A98C2C818BB900C63F69 /* Country&DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A98B2C818BB900C63F69 /* Country&DateVC.swift */; };
 		0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		0DB883542C819BE600A487BE /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB883532C819BE600A487BE /* Error.storyboard */; };
 		0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883552C819C3D00A487BE /* Error404VC.swift */; };
 		0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883572C81A2A400A487BE /* NoInternetVC.swift */; };
+		0DB8835B2C81A40E00A487BE /* UserDataSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835A2C81A40E00A487BE /* UserDataSign.swift */; };
+		0DB8835D2C81ACAD00A487BE /* CountryAndDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -83,12 +84,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D39A98B2C818BB900C63F69 /* Country&DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country&DateVC.swift"; sourceTree = "<group>"; };
 		0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
 		0DB883572C81A2A400A487BE /* NoInternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetVC.swift; sourceTree = "<group>"; };
+		0DB8835A2C81A40E00A487BE /* UserDataSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSign.swift; sourceTree = "<group>"; };
+		0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndDateVC.swift; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -207,6 +209,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		0DB883592C81A34C00A487BE /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
 		F73C1B3E2C7F2B8500A5A2C6 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,8 +259,8 @@
 			children = (
 				F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */,
 				F73C1C012C80A00200A5A2C6 /* LoginVC.swift */,
-				0D39A98B2C818BB900C63F69 /* Country&DateVC.swift */,
 				0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */,
+				0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 		F73C1BFD2C809F3D00A5A2C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0DB8835A2C81A40E00A487BE /* UserDataSign.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,10 +316,11 @@
 		F7FAF7342C7E27DF0057B655 /* SpeedoTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				0D39A9912C819AA500C63F69 /* Error */,
+				0DB883592C81A34C00A487BE /* Transfer */,
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
 				F7FAF73B2C7E27DF0057B655 /* Main.storyboard */,
+				0D39A9912C819AA500C63F69 /* Error */,
 				F7411D8E2C8169D2009DAB14 /* Extensions */,
 				0D2D08122C80921000CB4167 /* Authentication */,
 				F73C1BF12C808CC200A5A2C6 /* Onbaording */,
@@ -512,9 +523,10 @@
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				F73C1BF02C808CB700A5A2C6 /* PaymentOnbaordingVC.swift in Sources */,
-				0D39A98C2C818BB900C63F69 /* Country&DateVC.swift in Sources */,
 				F73C1C022C80A00200A5A2C6 /* LoginVC.swift in Sources */,
+				0DB8835B2C81A40E00A487BE /* UserDataSign.swift in Sources */,
 				F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */,
+				0DB8835D2C81ACAD00A487BE /* CountryAndDateVC.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
 				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,

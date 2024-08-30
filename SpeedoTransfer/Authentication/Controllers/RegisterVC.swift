@@ -2,28 +2,46 @@
 //  RegisterVC.swift
 //  SpeedoTransfer
 //
-//  Created by Abd Elrahman Atallah on 29/08/2024.
+//  Created by Abdullah Silva on 29/08/2024.
 //
 
 import UIKit
 
 class RegisterVC: UIViewController {
+    // MARK: - Connections
+    @IBOutlet weak var fullNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var SignUPBtn: UIButton!
+    @IBOutlet weak var passwordEyeImageView: UIImageView!
+    @IBOutlet weak var confirmPasswordEyeImageView: UIImageView!
+    
+    private var isPasswordVisible = false
+    private var isConfirmPasswordVisible = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let passwordEyeTapGesture = UITapGestureRecognizer(target: self, action: #selector(togglePasswordVisibility))
+        passwordEyeImageView.isUserInteractionEnabled = true
+        passwordEyeImageView.addGestureRecognizer(passwordEyeTapGesture)
 
-        // Do any additional setup after loading the view.
+        let confirmPasswordEyeTapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleConfirmPasswordVisibility))
+        confirmPasswordEyeImageView.isUserInteractionEnabled = true
+        confirmPasswordEyeImageView.addGestureRecognizer(confirmPasswordEyeTapGesture)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func togglePasswordVisibility() {
+        isPasswordVisible.toggle()
+        passwordTextField.isSecureTextEntry = !isPasswordVisible
+        let eyeImageName = isPasswordVisible ? "Component 2" : "closedEye"
+        passwordEyeImageView.image = UIImage(named: eyeImageName)
     }
-    */
-
+    
+    @objc func toggleConfirmPasswordVisibility() {
+        isConfirmPasswordVisible.toggle()
+        confirmPasswordTextField.isSecureTextEntry = !isConfirmPasswordVisible
+        let eyeImageName = isConfirmPasswordVisible ? "Component 2" : "closedEye"
+        confirmPasswordEyeImageView.image = UIImage(named: eyeImageName)
+    }
 }

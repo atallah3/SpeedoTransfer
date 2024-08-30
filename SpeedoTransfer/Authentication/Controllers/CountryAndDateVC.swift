@@ -1,18 +1,17 @@
 //
-//  Country&DateVC.swift
+//  CountryAndDateVC.swift
 //  SpeedoTransfer
 //
-//  Created by Abdullah Silva on 29/08/2024.
+//  Created by Abdullah Silva on 30/08/2024.
 //
 
 import UIKit
 
-class Country_DateVC: UIViewController {
+class CountryAndDateVC: UIViewController {
 
-    @IBOutlet weak var CountrySelect: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        CountrySelect.layer.borderWidth = 1
+
         // Do any additional setup after loading the view.
     }
     

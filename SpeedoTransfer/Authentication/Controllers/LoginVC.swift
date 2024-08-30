@@ -2,7 +2,7 @@
 //  LoginVC.swift
 //  SpeedoTransfer
 //
-//  Created by Abd Elrahman Atallah on 29/08/2024.
+//  Created by Abdullah Silva on 29/08/2024.
 //
 
 import UIKit
