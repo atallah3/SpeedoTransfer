@@ -69,6 +69,8 @@
 		F73C1BFA2C809F0700A5A2C6 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C1BF92C809F0700A5A2C6 /* Authentication.storyboard */; };
 		F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */; };
 		F73C1C022C80A00200A5A2C6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1C012C80A00200A5A2C6 /* LoginVC.swift */; };
+		F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D912C8173D0009DAB14 /* UIView+EXT.swift */; };
+		F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */; };
 		F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */; };
 		F7FAF73D2C7E27DF0057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73C2C7E27DF0057B655 /* Base */; };
 		F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73E2C7E27E10057B655 /* Assets.xcassets */; };
@@ -138,6 +140,8 @@
 		F73C1BF92C809F0700A5A2C6 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		F73C1C012C80A00200A5A2C6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F7411D912C8173D0009DAB14 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
+		F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
 		F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedoTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FAF73C2C7E27DF0057B655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -236,6 +240,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		F7411D8E2C8169D2009DAB14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7411D912C8173D0009DAB14 /* UIView+EXT.swift */,
+				F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F7FAF7292C7E27DF0057B655 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +271,7 @@
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
 				F7FAF73B2C7E27DF0057B655 /* Main.storyboard */,
+				F7411D8E2C8169D2009DAB14 /* Extensions */,
 				0D2D08122C80921000CB4167 /* Authentication */,
 				F73C1BF12C808CC200A5A2C6 /* Onbaording */,
 				F73C1B3E2C7F2B8500A5A2C6 /* Support */,
@@ -455,10 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				F73C1BF02C808CB700A5A2C6 /* PaymentOnbaordingVC.swift in Sources */,
 				F73C1C022C80A00200A5A2C6 /* LoginVC.swift in Sources */,
 				F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */,
+				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
 			);
