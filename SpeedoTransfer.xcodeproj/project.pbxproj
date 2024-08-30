@@ -14,6 +14,7 @@
 		0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883572C81A2A400A487BE /* NoInternetVC.swift */; };
 		0DB8835B2C81A40E00A487BE /* UserDataSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835A2C81A40E00A487BE /* UserDataSign.swift */; };
 		0DB8835D2C81ACAD00A487BE /* CountryAndDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */; };
+		0DB8835F2C81BAE200A487BE /* trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835E2C81BAE200A487BE /* trimming.swift */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -91,6 +92,7 @@
 		0DB883572C81A2A400A487BE /* NoInternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetVC.swift; sourceTree = "<group>"; };
 		0DB8835A2C81A40E00A487BE /* UserDataSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSign.swift; sourceTree = "<group>"; };
 		0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndDateVC.swift; sourceTree = "<group>"; };
+		0DB8835E2C81BAE200A487BE /* trimming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trimming.swift; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				0DB8835A2C81A40E00A487BE /* UserDataSign.swift */,
+				0DB8835E2C81BAE200A487BE /* trimming.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
 				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
 				0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */,
+				0DB8835F2C81BAE200A487BE /* trimming.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

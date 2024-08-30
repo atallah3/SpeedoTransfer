@@ -13,13 +13,21 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
-    @IBOutlet weak var SignUPBtn: UIButton!
     @IBOutlet weak var passwordEyeImageView: UIImageView!
     @IBOutlet weak var confirmPasswordEyeImageView: UIImageView!
     
     private var isPasswordVisible = false
     private var isConfirmPasswordVisible = false
 
+    @IBAction func SignUpBtn(_ sender: UIButton) {
+        guard let name = fullNameTextField.text?.trimmed,  let email = emailTextField.text?.trimmed, let password = passwordTextField.text?.trimmed, let confirmPassword = confirmPasswordTextField.text?.trimmed, password == confirmPassword
+        else {return}
+        
+        let user: User = User(name: name, email: email, password: password, confirmPassword: confirmPassword)
+        let sb = UIStoryboard(name: "Authentication", bundle: nil)
+        let continueToCountryVC = sb.instantiateViewController(withIdentifier: "CountryAndDateVC") as! CountryAndDateVC
+        self.navigationController?.pushViewController(continueToCountryVC, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let passwordEyeTapGesture = UITapGestureRecognizer(target: self, action: #selector(togglePasswordVisibility))

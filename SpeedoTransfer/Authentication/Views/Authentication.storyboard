@@ -106,6 +106,9 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="SignUpBtn:" destination="9r9-ou-bbx" eventType="touchUpInside" id="fvW-0D-Op5"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Yw-Pj-Fwk">
                                 <rect key="frame" x="66" y="722" width="267" height="37"/>
@@ -146,7 +149,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="hoI-eo-M3z"/>
                     <connections>
-                        <outlet property="SignUPBtn" destination="WTq-8I-6bc" id="pe9-0y-d7h"/>
                         <outlet property="confirmPasswordEyeImageView" destination="sbc-44-15J" id="RHf-v4-2nR"/>
                         <outlet property="confirmPasswordTextField" destination="123-JJ-k0X" id="3Q7-8h-Exs"/>
                         <outlet property="emailTextField" destination="TM6-kx-IIE" id="fvg-qd-aaq"/>
