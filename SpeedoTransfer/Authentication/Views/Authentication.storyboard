@@ -133,6 +133,9 @@
                                             </attributedString>
                                             <color key="baseForegroundColor" name="p300"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signInbtn1:" destination="9r9-ou-bbx" eventType="touchUpInside" id="5AI-mv-Kdp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
