@@ -30,7 +30,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="EzQ-to-hzf" kind="show" id="N9Q-An-5ZH"/>
+                                    <segue destination="Vtg-qA-0Ep" kind="show" id="Y9x-Y5-SaG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,20 +42,20 @@
             </objects>
             <point key="canvasLocation" x="1414.5038167938931" y="-91.549295774647888"/>
         </scene>
-        <!--OnboardingViews-->
-        <scene sceneID="v72-hT-Nwt">
+        <!--Authentication-->
+        <scene sceneID="vUu-yC-i5Q">
             <objects>
-                <viewControllerPlaceholder storyboardName="OnboardingViews" id="EzQ-to-hzf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="HIF-Sj-je8"/>
+                <viewControllerPlaceholder storyboardName="Authentication" id="Vtg-qA-0Ep" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nVE-UL-MOA"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="is7-XU-dWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qx4-8T-z2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615" y="-180"/>
+            <point key="canvasLocation" x="2605" y="-189"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="p75">
-            <color red="0.80784313725490198" green="0.63921568627450975" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80800002813339233" green="0.63899999856948853" blue="0.67500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
