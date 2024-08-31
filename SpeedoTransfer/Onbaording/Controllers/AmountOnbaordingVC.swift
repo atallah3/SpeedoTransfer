@@ -16,7 +16,7 @@ class AmountOnbaordingVC: UIViewController {
     }
     
     private func configureViewController() {
-        view.addGradientBackgroundColor()
+        view.addGradientBackgroundColor(colors: UIColor.FirstGradientolors)
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     

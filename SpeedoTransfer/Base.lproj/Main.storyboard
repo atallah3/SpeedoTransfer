@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1414.5038167938931" y="-91.549295774647888"/>
         </scene>
-        <!--Authentication-->
+        <!--Profile-->
         <scene sceneID="vUu-yC-i5Q">
             <objects>
-                <viewControllerPlaceholder storyboardName="Authentication" id="Vtg-qA-0Ep" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" id="Vtg-qA-0Ep" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nVE-UL-MOA"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qx4-8T-z2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

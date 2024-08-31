@@ -8,8 +8,7 @@
 import UIKit
 
 extension UIView {
-    func addGradientBackgroundColor() {
-        let colors: [UIColor] = [UIColor.white, UIColor.lightRed]
+    func addGradientBackgroundColor(colors: [UIColor]) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colors.map { $0.cgColor }
         
