@@ -48,8 +48,8 @@ class RegisterVC: UIViewController {
     
 //MARK: button Sign UP
     @IBAction func SignUpBtn(_ sender: UIButton) {
-        guard let name = fullNameTextField.text?.trimmed ,  let email = emailTextField.text?.trimmed , let password = passwordTextField.text?.trimmed, let confirmPassword = confirmPasswordTextField.text?.trimmed, password == confirmPassword
-        else { return }
+        guard let name = fullNameTextField.text?.trimmed , !name.isEmpty ,  let email = emailTextField.text?.trimmed, !email.isEmpty, let password = passwordTextField.text?.trimmed, !password.isEmpty, let confirmPassword = confirmPasswordTextField.text?.trimmed ,!confirmPassword.isEmpty, password == confirmPassword
+        else {return }
         
         let user: User = User(name: name, email: email, password: password)
         let sb = UIStoryboard(name: "Authentication", bundle: nil)
