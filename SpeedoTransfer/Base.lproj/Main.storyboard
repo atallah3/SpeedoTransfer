@@ -30,6 +30,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="iCK-CT-w1y" kind="show" id="6cc-mg-KSs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qIj-N9-rMA"/>
@@ -39,6 +42,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dg6-S6-e7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1414.5038167938931" y="-91.549295774647888"/>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="pD2-y8-DNm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authentication" id="iCK-CT-w1y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4jP-00-1PL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUA-3b-7d6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="-173"/>
         </scene>
     </scenes>
     <resources>
