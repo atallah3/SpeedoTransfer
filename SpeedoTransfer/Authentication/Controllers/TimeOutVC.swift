@@ -2,7 +2,7 @@
 //  TimeOutVC.swift
 //  SpeedoTransfer
 //
-//  Created by Abdullah Silva on 29/08/2024.
+//  Created by Abd Elrahman Atallah on 03/09/2024.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class TimeOutVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

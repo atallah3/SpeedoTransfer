@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */; };
 		0DA3E7522C8333DA005AF5E6 /* Transfer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA3E7512C8333DA005AF5E6 /* Transfer.storyboard */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		0DB883542C819BE600A487BE /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB883532C819BE600A487BE /* Error.storyboard */; };
 		0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883552C819C3D00A487BE /* Error404VC.swift */; };
 		0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883572C81A2A400A487BE /* NoInternetVC.swift */; };
-		0DB8835D2C81ACAD00A487BE /* CountryAndDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */; };
 		F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */; };
 		F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */; };
 		F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */; };
@@ -72,9 +70,6 @@
 		F73C1BF02C808CB700A5A2C6 /* PaymentOnbaordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1BEF2C808CB700A5A2C6 /* PaymentOnbaordingVC.swift */; };
 		F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1BF22C808CFF00A5A2C6 /* AmountOnbaordingVC.swift */; };
 		F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1BF42C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift */; };
-		F73C1BFA2C809F0700A5A2C6 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C1BF92C809F0700A5A2C6 /* Authentication.storyboard */; };
-		F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */; };
-		F73C1C022C80A00200A5A2C6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C1C012C80A00200A5A2C6 /* LoginVC.swift */; };
 		F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D912C8173D0009DAB14 /* UIView+EXT.swift */; };
 		F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */; };
 		F74203532C83337B00F3481A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74203522C83337B00F3481A /* ProfileVC.swift */; };
@@ -84,20 +79,25 @@
 		F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F742035C2C833FCF00F3481A /* ProfileCell.swift */; };
 		F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AAB222C81E7CD00C63A87 /* String+EXT.swift */; };
 		F74AAB252C81E83200C63A87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AAB242C81E83200C63A87 /* User.swift */; };
+		F7534F182C877FA600813E5B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7534F162C877FA600813E5B /* RegisterVC.swift */; };
+		F7534F192C877FA600813E5B /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F172C877FA600813E5B /* RegisterVC.xib */; };
+		F7534F1C2C877FD800813E5B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7534F1A2C877FD800813E5B /* LoginVC.swift */; };
+		F7534F1D2C877FD800813E5B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F1B2C877FD800813E5B /* LoginVC.xib */; };
+		F7534F202C87800000813E5B /* TimeOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7534F1E2C87800000813E5B /* TimeOutVC.swift */; };
+		F7534F212C87800000813E5B /* TimeOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F1F2C87800000813E5B /* TimeOutVC.xib */; };
+		F7534F242C87801600813E5B /* CountryAndDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7534F222C87801600813E5B /* CountryAndDateVC.swift */; };
+		F7534F252C87801600813E5B /* CountryAndDateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F232C87801600813E5B /* CountryAndDateVC.xib */; };
 		F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */; };
-		F7FAF73D2C7E27DF0057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73C2C7E27DF0057B655 /* Base */; };
 		F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73E2C7E27E10057B655 /* Assets.xcassets */; };
 		F7FAF7422C7E27E10057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7412C7E27E10057B655 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
 		0DA3E7512C8333DA005AF5E6 /* Transfer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transfer.storyboard; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
 		0DB883572C81A2A400A487BE /* NoInternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetVC.swift; sourceTree = "<group>"; };
-		0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndDateVC.swift; sourceTree = "<group>"; };
 		F73C1B412C7F2C7100A5A2C6 /* Inter_24pt-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Light.ttf"; sourceTree = "<group>"; };
 		F73C1B422C7F2C7100A5A2C6 /* Inter_24pt-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B432C7F2C7100A5A2C6 /* Inter_28pt-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_28pt-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -156,9 +156,6 @@
 		F73C1BEF2C808CB700A5A2C6 /* PaymentOnbaordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOnbaordingVC.swift; sourceTree = "<group>"; };
 		F73C1BF22C808CFF00A5A2C6 /* AmountOnbaordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountOnbaordingVC.swift; sourceTree = "<group>"; };
 		F73C1BF42C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationOnbaordingVC.swift; sourceTree = "<group>"; };
-		F73C1BF92C809F0700A5A2C6 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		F73C1C012C80A00200A5A2C6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F7411D912C8173D0009DAB14 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
 		F74203522C83337B00F3481A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -168,9 +165,16 @@
 		F742035C2C833FCF00F3481A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F74AAB222C81E7CD00C63A87 /* String+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EXT.swift"; sourceTree = "<group>"; };
 		F74AAB242C81E83200C63A87 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F7534F162C877FA600813E5B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F7534F172C877FA600813E5B /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		F7534F1A2C877FD800813E5B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F7534F1B2C877FD800813E5B /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		F7534F1E2C87800000813E5B /* TimeOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutVC.swift; sourceTree = "<group>"; };
+		F7534F1F2C87800000813E5B /* TimeOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOutVC.xib; sourceTree = "<group>"; };
+		F7534F222C87801600813E5B /* CountryAndDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndDateVC.swift; sourceTree = "<group>"; };
+		F7534F232C87801600813E5B /* CountryAndDateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryAndDateVC.xib; sourceTree = "<group>"; };
 		F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedoTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7FAF73C2C7E27DF0057B655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7FAF73E2C7E27E10057B655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7FAF7412C7E27E10057B655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7FAF7432C7E27E10057B655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,10 +284,10 @@
 		F73C1BFB2C809F1000A5A2C6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F73C1BFF2C809FF000A5A2C6 /* RegisterVC.swift */,
-				F73C1C012C80A00200A5A2C6 /* LoginVC.swift */,
-				0D39A98D2C81978D00C63F69 /* TimeOutVC.swift */,
-				0DB8835C2C81ACAD00A487BE /* CountryAndDateVC.swift */,
+				F7534F162C877FA600813E5B /* RegisterVC.swift */,
+				F7534F1A2C877FD800813E5B /* LoginVC.swift */,
+				F7534F1E2C87800000813E5B /* TimeOutVC.swift */,
+				F7534F222C87801600813E5B /* CountryAndDateVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -291,7 +295,10 @@
 		F73C1BFC2C809F1E00A5A2C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F73C1BF92C809F0700A5A2C6 /* Authentication.storyboard */,
+				F7534F172C877FA600813E5B /* RegisterVC.xib */,
+				F7534F1B2C877FD800813E5B /* LoginVC.xib */,
+				F7534F1F2C87800000813E5B /* TimeOutVC.xib */,
+				F7534F232C87801600813E5B /* CountryAndDateVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,7 +386,6 @@
 				0DA3E74F2C832FE5005AF5E6 /* Transfer */,
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
-				F7FAF73B2C7E27DF0057B655 /* Main.storyboard */,
 				F74203512C83335300F3481A /* Profile */,
 				0D39A9912C819AA500C63F69 /* Error */,
 				0D2D08122C80921000CB4167 /* Authentication */,
@@ -515,12 +521,15 @@
 				F73C1BEE2C808C9900A5A2C6 /* OnboardingViews.storyboard in Resources */,
 				F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */,
 				F73C1B802C7F2C7200A5A2C6 /* Inter_28pt-LightItalic.ttf in Resources */,
+				F7534F1D2C877FD800813E5B /* LoginVC.xib in Resources */,
 				F73C1B962C7F2C7200A5A2C6 /* Inter_28pt-ExtraBoldItalic.ttf in Resources */,
 				F73C1B892C7F2C7200A5A2C6 /* Inter_24pt-Black.ttf in Resources */,
 				F73C1B8B2C7F2C7200A5A2C6 /* Inter_28pt-Light.ttf in Resources */,
 				F73C1B882C7F2C7200A5A2C6 /* Inter_18pt-ExtraBold.ttf in Resources */,
+				F7534F252C87801600813E5B /* CountryAndDateVC.xib in Resources */,
 				F73C1BA72C7F2C7200A5A2C6 /* Inter_18pt-BlackItalic.ttf in Resources */,
 				F73C1B8C2C7F2C7200A5A2C6 /* Inter_18pt-ThinItalic.ttf in Resources */,
+				F7534F212C87800000813E5B /* TimeOutVC.xib in Resources */,
 				F73C1B872C7F2C7200A5A2C6 /* Inter_18pt-Bold.ttf in Resources */,
 				0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */,
 				F73C1B7B2C7F2C7200A5A2C6 /* Inter_28pt-SemiBoldItalic.ttf in Resources */,
@@ -539,6 +548,7 @@
 				F73C1B9C2C7F2C7200A5A2C6 /* Inter_28pt-MediumItalic.ttf in Resources */,
 				F73C1B952C7F2C7200A5A2C6 /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
 				F73C1B9F2C7F2C7200A5A2C6 /* Inter_18pt-Thin.ttf in Resources */,
+				F7534F192C877FA600813E5B /* RegisterVC.xib in Resources */,
 				F73C1B8A2C7F2C7200A5A2C6 /* Inter_24pt-MediumItalic.ttf in Resources */,
 				F73C1B822C7F2C7200A5A2C6 /* Inter_24pt-Medium.ttf in Resources */,
 				F73C1B852C7F2C7200A5A2C6 /* Inter_28pt-Thin.ttf in Resources */,
@@ -548,7 +558,6 @@
 				F74203572C8333BF00F3481A /* Profile.storyboard in Resources */,
 				F73C1BA32C7F2C7200A5A2C6 /* Inter_18pt-SemiBold.ttf in Resources */,
 				F73C1B7E2C7F2C7200A5A2C6 /* Inter_28pt-Medium.ttf in Resources */,
-				F73C1BFA2C809F0700A5A2C6 /* Authentication.storyboard in Resources */,
 				F73C1B7F2C7F2C7200A5A2C6 /* Inter_24pt-Regular.ttf in Resources */,
 				F73C1B8E2C7F2C7200A5A2C6 /* Inter_24pt-BoldItalic.ttf in Resources */,
 				F73C1BA62C7F2C7200A5A2C6 /* Inter_24pt-BlackItalic.ttf in Resources */,
@@ -564,7 +573,6 @@
 				F73C1B832C7F2C7200A5A2C6 /* Inter_18pt-Medium.ttf in Resources */,
 				F73C1BA82C7F2C7200A5A2C6 /* Inter_24pt-ExtraLightItalic.ttf in Resources */,
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
-				F7FAF73D2C7E27DF0057B655 /* Base in Resources */,
 				F73C1B7C2C7F2C7200A5A2C6 /* Inter_24pt-LightItalic.ttf in Resources */,
 				F73C1B972C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
@@ -588,18 +596,18 @@
 				F74203532C83337B00F3481A /* ProfileVC.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
+				F7534F1C2C877FD800813E5B /* LoginVC.swift in Sources */,
+				F7534F182C877FA600813E5B /* RegisterVC.swift in Sources */,
 				F73C1BF02C808CB700A5A2C6 /* PaymentOnbaordingVC.swift in Sources */,
-				F73C1C022C80A00200A5A2C6 /* LoginVC.swift in Sources */,
-				F73C1C002C809FF000A5A2C6 /* RegisterVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
 				F74AAB252C81E83200C63A87 /* User.swift in Sources */,
-				0DB8835D2C81ACAD00A487BE /* CountryAndDateVC.swift in Sources */,
 				F742035B2C8339C700F3481A /* ProfileTableViewCell.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
+				F7534F242C87801600813E5B /* CountryAndDateVC.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
+				F7534F202C87800000813E5B /* TimeOutVC.swift in Sources */,
 				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
 				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
-				0D39A98E2C81978D00C63F69 /* TimeOutVC.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,14 +615,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F7FAF73B2C7E27DF0057B655 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7FAF73C2C7E27DF0057B655 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7FAF7402C7E27E10057B655 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -757,7 +757,6 @@
 				INFOPLIST_FILE = SpeedoTransfer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -790,7 +789,6 @@
 				INFOPLIST_FILE = SpeedoTransfer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;

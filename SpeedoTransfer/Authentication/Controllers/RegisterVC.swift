@@ -2,6 +2,15 @@
 //  RegisterVC.swift
 //  SpeedoTransfer
 //
+//  Created by Abd Elrahman Atallah on 03/09/2024.
+//
+
+import UIKit
+
+//
+//  RegisterVC.swift
+//  SpeedoTransfer
+//
 //  Created by Abdullah Silva on 29/08/2024.
 //
 
@@ -10,18 +19,18 @@ import UIKit
 class RegisterVC: UIViewController {
     
     // MARK: - IBOutlet
-    @IBOutlet weak var fullNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
-    @IBOutlet weak var errorlabel: UILabel!
+    @IBOutlet var fullNameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    
+    @IBOutlet var passwordTextField: UITextField!
+    
+    @IBOutlet var confirmPasswordTextField: UITextField!
     
     private var isPasswordVisible = false
     private var isConfirmPasswordVisible = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        errorlabel.isHidden = true
     }
     func validateSignup() {
         guard let password = passwordTextField.text,
@@ -59,8 +68,8 @@ class RegisterVC: UIViewController {
         passwordTextField.layer.borderWidth = 1.0
         confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
         confirmPasswordTextField.layer.borderWidth = 1.0
-        errorlabel.text = message
-        errorlabel.isHidden = false
+//        errorlabel.text = message
+//        errorlabel.isHidden = false
         UIView.animate(withDuration: 0.3) {
             self.passwordTextField.layer.borderColor = UIColor.red.cgColor
             self.confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
@@ -71,8 +80,8 @@ class RegisterVC: UIViewController {
         passwordTextField.layer.borderWidth = 0.0
         confirmPasswordTextField.layer.borderColor = UIColor.clear.cgColor
         confirmPasswordTextField.layer.borderWidth = 0.0
-        errorlabel.text = ""
-        errorlabel.isHidden = true
+//        errorlabel.text = ""
+//        errorlabel.isHidden = true
     }
     func clearNameError() {
         fullNameTextField.layer.borderColor = UIColor.clear.cgColor

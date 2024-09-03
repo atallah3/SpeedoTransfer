@@ -17,7 +17,8 @@ class AmountOnbaordingVC: UIViewController {
     
     private func configureViewController() {
         view.addGradientBackgroundColor(colors: UIColor.FirstGradientolors)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        title = "hello"
+//        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func skipBtnTapped(_ sender: UIButton) {
