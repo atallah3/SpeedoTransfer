@@ -136,6 +136,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="errorlabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss4-Rv-ttg">
+                                <rect key="frame" x="50" y="686" width="293" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GmJ-kh-GQY"/>
                         <color key="backgroundColor" name="lightRedGradient"/>
@@ -183,6 +190,7 @@
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="123-JJ-k0X" id="3Q7-8h-Exs"/>
                         <outlet property="emailTextField" destination="TM6-kx-IIE" id="fvg-qd-aaq"/>
+                        <outlet property="errorlabel" destination="Ss4-Rv-ttg" id="g3O-yU-3rr"/>
                         <outlet property="fullNameTextField" destination="sw0-nw-jy8" id="Y9I-Bg-VMF"/>
                         <outlet property="passwordTextField" destination="30e-nh-Tru" id="Lrl-MN-nAD"/>
                     </connections>
