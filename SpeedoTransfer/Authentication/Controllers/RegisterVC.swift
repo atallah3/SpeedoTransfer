@@ -24,42 +24,69 @@ class RegisterVC: UIViewController {
         errorlabel.isHidden = true
     }
     func validateSignup() {
-        guard let password = passwordTextField.text, isValidPassword(password) else {
-            showPasswordError()
+        guard let password = passwordTextField.text,
+              let confirmedPassword = confirmPasswordTextField.text else {
+            showPasswordError(message: "Please enter both password and confirmation.")
             return
         }
-        clearPasswordError()
+        if !isValidPassword(password: password, confirmedPassword: confirmedPassword) {
+            showPasswordError(message: "Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character. Ensure passwords match.")
+            return
+        }
+                clearPasswordError()
+
+        guard let name = fullNameTextField.text, !name.isEmpty else {
+
+            fullNameTextField.layer.borderColor = UIColor.red.cgColor
+            fullNameTextField.layer.borderWidth = 1.0
+            return
+        }
+        clearNameError()
+
     }
-    func isValidPassword(_ password: String) -> Bool {
+
+
+
+    func isValidPassword(password: String, confirmedPassword: String) -> Bool {
         let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")
+        guard password == confirmedPassword else {
+            return false
+        }
         return passwordPredicate.evaluate(with: password)
     }
-    
-    func showPasswordError() {
+    func showPasswordError(message: String) {
         passwordTextField.layer.borderColor = UIColor.red.cgColor
         passwordTextField.layer.borderWidth = 1.0
         confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
         confirmPasswordTextField.layer.borderWidth = 1.0
-        errorlabel.text = "Password must be at least 8 characters long and include an uppercase letter, a lowercase letter, a number, and a special character."
-        errorlabel.textColor = UIColor.red
+        errorlabel.text = message
         errorlabel.isHidden = false
         UIView.animate(withDuration: 0.3) {
             self.passwordTextField.layer.borderColor = UIColor.red.cgColor
+            self.confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
         }
     }
     func clearPasswordError() {
         passwordTextField.layer.borderColor = UIColor.clear.cgColor
+        passwordTextField.layer.borderWidth = 0.0
         confirmPasswordTextField.layer.borderColor = UIColor.clear.cgColor
+        confirmPasswordTextField.layer.borderWidth = 0.0
         errorlabel.text = ""
         errorlabel.isHidden = true
     }
+    func clearNameError() {
+        fullNameTextField.layer.borderColor = UIColor.clear.cgColor
+        fullNameTextField.layer.borderWidth = 0.0
+    }
+
+
     
     //MARK: button Sign UP
     @IBAction func SignUpBtn(_ sender: UIButton) {
         validateSignup()
         guard let name = fullNameTextField.text?.trimmed , !name.isEmpty ,  let email = emailTextField.text?.trimmed, !email.isEmpty, let password = passwordTextField.text?.trimmed, !password.isEmpty, let confirmPassword = confirmPasswordTextField.text?.trimmed ,!confirmPassword.isEmpty, password == confirmPassword
         else {return }
-        let user: User = User(name: name, email: email, password: password)
+        let _: User = User(name: name, email: email, password: password)
         let sb = UIStoryboard(name: "Authentication", bundle: nil)
         let continueToCountryVC = sb.instantiateViewController(withIdentifier: "CountryAndDateVC") as! CountryAndDateVC
         self.navigationController?.pushViewController(continueToCountryVC, animated: true)
