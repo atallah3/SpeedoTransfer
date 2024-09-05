@@ -7,12 +7,13 @@
 
 import UIKit
 
-class HOmeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var RecentTransactionsTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        RecentTransactionsTable.register(TransactionsTableTableViewCell.self, forCellReuseIdentifier: "TransactionsTableTableViewCell")
+        RecentTransactionsTable.register(UINib(nibName: "TransactionsTableTableViewCell", bundle: nil), forCellReuseIdentifier: "TransactionsTableTableViewCell")
+
         RecentTransactionsTable.dataSource = self
         RecentTransactionsTable.delegate = self
     }
@@ -25,7 +26,7 @@ class HOmeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 61
+        return 100
     }
 
 }
