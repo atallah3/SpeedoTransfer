@@ -87,6 +87,8 @@
 		F74AAB252C81E83200C63A87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AAB242C81E83200C63A87 /* User.swift */; };
 		F74DBA482C89D5570063942A /* STTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA472C89D5570063942A /* STTabBarController.swift */; };
 		F74DBA4A2C89DDD40063942A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA492C89DDD40063942A /* RegisterVC.swift */; };
+		F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA4B2C89FB0A0063942A /* LoginVC.swift */; };
+		F74DBA5C2C8A148F0063942A /* UIViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA5B2C8A148F0063942A /* UIViewController+EXT.swift */; };
 		F7534F192C877FA600813E5B /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F172C877FA600813E5B /* RegisterVC.xib */; };
 		F7534F1D2C877FD800813E5B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F1B2C877FD800813E5B /* LoginVC.xib */; };
 		F7534F212C87800000813E5B /* TimeOutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F1F2C87800000813E5B /* TimeOutVC.xib */; };
@@ -177,6 +179,8 @@
 		F74AAB242C81E83200C63A87 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F74DBA472C89D5570063942A /* STTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTabBarController.swift; sourceTree = "<group>"; };
 		F74DBA492C89DDD40063942A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F74DBA4B2C89FB0A0063942A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F74DBA5B2C8A148F0063942A /* UIViewController+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+EXT.swift"; sourceTree = "<group>"; };
 		F7534F172C877FA600813E5B /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		F7534F1B2C877FD800813E5B /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		F7534F1F2C87800000813E5B /* TimeOutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeOutVC.xib; sourceTree = "<group>"; };
@@ -307,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				F74DBA492C89DDD40063942A /* RegisterVC.swift */,
+				F74DBA4B2C89FB0A0063942A /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				F7411D912C8173D0009DAB14 /* UIView+EXT.swift */,
 				F74AAB222C81E7CD00C63A87 /* String+EXT.swift */,
 				F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */,
+				F74DBA5B2C8A148F0063942A /* UIViewController+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,6 +397,14 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		F74DBA4D2C8A01130063942A /* CustomReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F74DBA462C89D5020063942A /* TabBarController */,
+			);
+			path = CustomReusableComponents;
+			sourceTree = "<group>";
+		};
 		F7FAF7292C7E27DF0057B655 = {
 			isa = PBXGroup;
 			children = (
@@ -413,7 +427,7 @@
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
 				0D3BA4202C87ABEB00B1E926 /* Transfer */,
-				F74DBA462C89D5020063942A /* TabBarController */,
+				F74DBA4D2C8A01130063942A /* CustomReusableComponents */,
 				F74203512C83335300F3481A /* Profile */,
 				0D39A9912C819AA500C63F69 /* Error */,
 				0D2D08122C80921000CB4167 /* Authentication */,
@@ -622,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74DBA5C2C8A148F0063942A /* UIViewController+EXT.swift in Sources */,
 				F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */,
 				F74203532C83337B00F3481A /* ProfileVC.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
@@ -636,6 +651,7 @@
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				0D0626D02C89E2E500725116 /* HOmeTransferVC.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
+				F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */,
 				0D0626CA2C89CA3300725116 /* ConfirmationTransferVC.swift in Sources */,
 				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
 				0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */,
