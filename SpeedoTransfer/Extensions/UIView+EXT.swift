@@ -8,6 +8,14 @@
 import UIKit
 
 extension UIView {
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set {
+            self.layer.cornerRadius = newValue
+        }
+    }
+    
     func addGradientBackgroundColor(colors: [UIColor]) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colors.map { $0.cgColor }
