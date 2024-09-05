@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0626CA2C89CA3300725116 /* ConfirmationTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626C82C89CA3200725116 /* ConfirmationTransferVC.swift */; };
+		0D0626CB2C89CA3300725116 /* ConfirmationTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626C92C89CA3200725116 /* ConfirmationTransferVC.xib */; };
+		0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626CC2C89DA1600725116 /* BottomSheet.swift */; };
+		0D0626D02C89E2E500725116 /* HOmeTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626CE2C89E2E500725116 /* HOmeTransferVC.swift */; };
+		0D0626D12C89E2E500725116 /* HOmeTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626CF2C89E2E500725116 /* HOmeTransferVC.xib */; };
+		0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */; };
+		0D0626D62C89E58300725116 /* TransactionsTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */; };
 		0D3BA4312C87B38A00B1E926 /* AmountTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BA42F2C87B38A00B1E926 /* AmountTransferVC.swift */; };
 		0D3BA4322C87B38A00B1E926 /* AmountTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BA4302C87B38A00B1E926 /* AmountTransferVC.xib */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
@@ -94,9 +101,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0626C82C89CA3200725116 /* ConfirmationTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationTransferVC.swift; sourceTree = "<group>"; };
+		0D0626C92C89CA3200725116 /* ConfirmationTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationTransferVC.xib; sourceTree = "<group>"; };
+		0D0626CC2C89DA1600725116 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		0D0626CE2C89E2E500725116 /* HOmeTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOmeTransferVC.swift; sourceTree = "<group>"; };
+		0D0626CF2C89E2E500725116 /* HOmeTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HOmeTransferVC.xib; sourceTree = "<group>"; };
+		0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableTableViewCell.swift; sourceTree = "<group>"; };
+		0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsTableTableViewCell.xib; sourceTree = "<group>"; };
 		0D3BA42F2C87B38A00B1E926 /* AmountTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AmountTransferVC.swift; path = ../../../../../Documents/AmountTransferVC.swift; sourceTree = "<group>"; };
 		0D3BA4302C87B38A00B1E926 /* AmountTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AmountTransferVC.xib; path = ../../../../../Documents/AmountTransferVC.xib; sourceTree = "<group>"; };
-		0D3BA4332C87B39500B1E926 /* AmountTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTransferVC.swift; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
@@ -194,6 +207,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0626D22C89E54600725116 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */,
+				0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		0D2D08122C80921000CB4167 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,18 +255,10 @@
 		0D3BA4202C87ABEB00B1E926 /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				0D0626D22C89E54600725116 /* model */,
 				0D3BA42C2C87B2AB00B1E926 /* View */,
-				0D3BA4212C87ABF600B1E926 /* Controllers */,
 			);
 			path = Transfer;
-			sourceTree = "<group>";
-		};
-		0D3BA4212C87ABF600B1E926 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0D3BA4332C87B39500B1E926 /* AmountTransferVC.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		0D3BA42C2C87B2AB00B1E926 /* View */ = {
@@ -252,6 +266,11 @@
 			children = (
 				0D3BA42F2C87B38A00B1E926 /* AmountTransferVC.swift */,
 				0D3BA4302C87B38A00B1E926 /* AmountTransferVC.xib */,
+				0D0626C82C89CA3200725116 /* ConfirmationTransferVC.swift */,
+				0D0626C92C89CA3200725116 /* ConfirmationTransferVC.xib */,
+				0D0626CC2C89DA1600725116 /* BottomSheet.swift */,
+				0D0626CE2C89E2E500725116 /* HOmeTransferVC.swift */,
+				0D0626CF2C89E2E500725116 /* HOmeTransferVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +550,7 @@
 			files = (
 				F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */,
 				F73C1B9B2C7F2C7200A5A2C6 /* Inter_24pt-ExtraLight.ttf in Resources */,
+				0D0626D12C89E2E500725116 /* HOmeTransferVC.xib in Resources */,
 				F73C1BEE2C808C9900A5A2C6 /* OnboardingViews.storyboard in Resources */,
 				F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */,
 				F73C1B802C7F2C7200A5A2C6 /* Inter_28pt-LightItalic.ttf in Resources */,
@@ -564,6 +584,7 @@
 				F73C1B8A2C7F2C7200A5A2C6 /* Inter_24pt-MediumItalic.ttf in Resources */,
 				F73C1B822C7F2C7200A5A2C6 /* Inter_24pt-Medium.ttf in Resources */,
 				F73C1B852C7F2C7200A5A2C6 /* Inter_28pt-Thin.ttf in Resources */,
+				0D0626D62C89E58300725116 /* TransactionsTableTableViewCell.xib in Resources */,
 				F73C1BA12C7F2C7200A5A2C6 /* Inter_18pt-Light.ttf in Resources */,
 				F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */,
 				F73C1B922C7F2C7200A5A2C6 /* Inter_28pt-BlackItalic.ttf in Resources */,
@@ -585,6 +606,7 @@
 				F73C1B832C7F2C7200A5A2C6 /* Inter_18pt-Medium.ttf in Resources */,
 				F73C1BA82C7F2C7200A5A2C6 /* Inter_24pt-ExtraLightItalic.ttf in Resources */,
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
+				0D0626CB2C89CA3300725116 /* ConfirmationTransferVC.xib in Resources */,
 				F73C1B7C2C7F2C7200A5A2C6 /* Inter_24pt-LightItalic.ttf in Resources */,
 				F73C1B972C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
@@ -611,16 +633,20 @@
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				F7534F1C2C877FD800813E5B /* LoginVC.swift in Sources */,
 				F7534F182C877FA600813E5B /* RegisterVC.swift in Sources */,
+				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,
 				F73C1BF02C808CB700A5A2C6 /* PaymentOnbaordingVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
 				F74AAB252C81E83200C63A87 /* User.swift in Sources */,
 				F742035B2C8339C700F3481A /* ProfileTableViewCell.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
+				0D0626D02C89E2E500725116 /* HOmeTransferVC.swift in Sources */,
 				0D3BA4312C87B38A00B1E926 /* AmountTransferVC.swift in Sources */,
 				F7534F242C87801600813E5B /* CountryAndDateVC.swift in Sources */,
 				F73C1BF52C808D1200A5A2C6 /* ConfirmationOnbaordingVC.swift in Sources */,
 				F7534F202C87800000813E5B /* TimeOutVC.swift in Sources */,
+				0D0626CA2C89CA3300725116 /* ConfirmationTransferVC.swift in Sources */,
 				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
+				0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */,
 				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
 				F73C1BF32C808CFF00A5A2C6 /* AmountOnbaordingVC.swift in Sources */,
 			);
