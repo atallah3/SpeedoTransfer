@@ -22,8 +22,8 @@ class CountryTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(countryImage: UIImage, countryName: String) {
-        self.countryName.text = countryName
-        self.countryImage.image = countryImage
+    func configureCell(country: Country) {
+        self.countryName.text = country.name
+        self.countryImage.image = country.image
     }
 }

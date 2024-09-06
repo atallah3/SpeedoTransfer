@@ -17,7 +17,7 @@ class STTabBarController: UITabBarController {
     
 
     func setupViewControllers() {
-        let homeVC = AmountOnbaordingVC()
+        let homeVC = HomeTransferVC()
         homeVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
         let transferVC = UIViewController()
         transferVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)

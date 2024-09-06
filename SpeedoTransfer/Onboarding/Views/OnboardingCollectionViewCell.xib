@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="OnboardingCollectionViewCell" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="SpeedoTransfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="609"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="609"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amount" translatesAutoresizingMaskIntoConstraints="NO" id="pD6-5s-VaD">
+                        <rect key="frame" x="20" y="51" width="351" height="303"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kv6-OS-zrJ">
+                        <rect key="frame" x="20" y="386" width="351" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amont" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN9-cE-am0">
+                                <rect key="frame" x="145.33333333333334" y="0.0" width="60.666666666666657" height="25.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" name="g900"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send money fast with simple steps. Create account, Confirmation, Payment. Simple." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxn-Tu-x9B">
+                                <rect key="frame" x="11.333333333333343" y="41.333333333333314" width="328.33333333333326" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="g700"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kv6-OS-zrJ" firstAttribute="leading" secondItem="pD6-5s-VaD" secondAttribute="leading" id="Bh9-Kn-5Ug"/>
+                <constraint firstItem="Kv6-OS-zrJ" firstAttribute="top" secondItem="pD6-5s-VaD" secondAttribute="bottom" constant="32" id="G7W-mU-Xr7"/>
+                <constraint firstItem="pD6-5s-VaD" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="SSi-Zk-pwT"/>
+                <constraint firstItem="Kv6-OS-zrJ" firstAttribute="trailing" secondItem="pD6-5s-VaD" secondAttribute="trailing" id="Vtp-DV-fMi"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="pD6-5s-VaD" secondAttribute="trailing" constant="20" id="d7E-4U-xgF"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="pD6-5s-VaD" secondAttribute="top" constant="8" id="zvF-du-DvD"/>
+            </constraints>
+            <size key="customSize" width="391" height="609"/>
+            <connections>
+                <outlet property="bodyLabel" destination="yxn-Tu-x9B" id="LqF-J3-T0d"/>
+                <outlet property="onboardingImageView" destination="pD6-5s-VaD" id="JGO-7S-q78"/>
+                <outlet property="titleLabel" destination="yN9-cE-am0" id="t7S-KT-KIN"/>
+            </connections>
+            <point key="canvasLocation" x="19.083969465648853" y="29.929577464788736"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Amount" width="350" height="303"/>
+        <namedColor name="g700">
+            <color red="0.23499999940395355" green="0.22699999809265137" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="g900">
+            <color red="0.14100000262260437" green="0.13300000131130219" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
