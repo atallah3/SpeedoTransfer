@@ -33,8 +33,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuf-Mv-u93">
-                        <rect key="frame" x="77" y="43" width="171" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuf-Mv-u93">
+                        <rect key="frame" x="77" y="42.333333333333336" width="171" height="14.666666666666664"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                         <color key="textColor" name="g100"/>
                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                         <color key="textColor" name="p300"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="visaType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKY-qh-PJS">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="visaType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKY-qh-PJS">
                         <rect key="frame" x="78" y="26" width="171" height="18"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                         <color key="textColor" name="g700"/>
@@ -56,6 +56,7 @@
                     <constraint firstItem="FKY-qh-PJS" firstAttribute="top" secondItem="Q3p-fC-Wno" secondAttribute="bottom" id="6CK-m6-flU"/>
                     <constraint firstItem="4Ng-TP-ott" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="261" id="9O8-n2-Ml7"/>
                     <constraint firstItem="FKY-qh-PJS" firstAttribute="leading" secondItem="39B-yL-QIW" secondAttribute="trailing" constant="9" id="9nu-ze-yIb"/>
+                    <constraint firstAttribute="trailing" secondItem="cuf-Mv-u93" secondAttribute="trailing" constant="78" id="AH0-T9-zXn"/>
                     <constraint firstItem="39B-yL-QIW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ETi-tD-6ih"/>
                     <constraint firstAttribute="bottom" secondItem="4Ng-TP-ott" secondAttribute="bottom" constant="36.333333333333329" id="Jp7-5u-1oT"/>
                     <constraint firstAttribute="trailing" secondItem="4Ng-TP-ott" secondAttribute="trailing" constant="8" id="UrM-o0-f8l"/>
@@ -63,10 +64,11 @@
                     <constraint firstItem="cuf-Mv-u93" firstAttribute="leading" secondItem="39B-yL-QIW" secondAttribute="trailing" constant="8" symbolic="YES" id="cPS-Qj-NpE"/>
                     <constraint firstItem="39B-yL-QIW" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.836066" id="lsz-0e-PEy"/>
                     <constraint firstItem="4Ng-TP-ott" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="maL-cI-OKL"/>
+                    <constraint firstAttribute="bottom" secondItem="cuf-Mv-u93" secondAttribute="bottom" constant="4" id="oiT-oh-mmG"/>
                     <constraint firstItem="Q3p-fC-Wno" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="qN3-hq-bur"/>
                     <constraint firstItem="Q3p-fC-Wno" firstAttribute="leading" secondItem="39B-yL-QIW" secondAttribute="trailing" constant="9" id="spZ-0l-O8N"/>
                     <constraint firstItem="39B-yL-QIW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="vxj-ki-eRi"/>
-                    <constraint firstItem="cuf-Mv-u93" firstAttribute="top" secondItem="FKY-qh-PJS" secondAttribute="bottom" constant="-1" id="z9b-VO-1mK"/>
+                    <constraint firstItem="cuf-Mv-u93" firstAttribute="top" secondItem="FKY-qh-PJS" secondAttribute="bottom" constant="3" id="z9b-VO-1mK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

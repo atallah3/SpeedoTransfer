@@ -18,7 +18,7 @@ class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         RecentTransactionsTable.delegate = self
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 25
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,7 +26,7 @@ class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 61
     }
 
 }

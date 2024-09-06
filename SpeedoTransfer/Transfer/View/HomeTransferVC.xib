@@ -4,10 +4,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter.ttc">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTransferVC" customModule="SpeedoTransfer" customModuleProvider="target">
             <connections>
@@ -20,18 +26,87 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kiE-ku-lYe">
-                    <rect key="frame" x="21" y="282" width="360" height="476"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Recent transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-nA-jw4">
+                    <rect key="frame" x="17.666666666666671" y="287" width="150" height="20"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                    <color key="textColor" name="g900"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kiE-ku-lYe">
+                    <rect key="frame" x="17.666666666666657" y="322" width="360" height="467"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oy5-Ob-Wc0">
+                    <rect key="frame" x="17.666666666666657" y="149" width="360" height="123"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zb-Ga-43h">
+                            <rect key="frame" x="32" y="17" width="122" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                            <color key="textColor" name="g0"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000000EGP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-kL-6Tq">
+                            <rect key="frame" x="32" y="51" width="173" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="28"/>
+                            <color key="textColor" name="g0"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="p300"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icO-PL-Emq">
+                    <rect key="frame" x="307" y="280" width="79.333333333333314" height="34"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="View all">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        <color key="baseForegroundColor" name="g200"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-53" y="-38"/>
+            <color key="backgroundColor" name="lightRedGradient"/>
+            <constraints>
+                <constraint firstItem="kiE-ku-lYe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17.666666666666657" id="0xU-Df-jCl"/>
+                <constraint firstItem="kiE-ku-lYe" firstAttribute="leading" secondItem="oy5-Ob-Wc0" secondAttribute="leading" constant="-7.1054273576010019e-15" id="5ei-Ns-Ntt"/>
+                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.910093" constant="2.3334509999999682" id="BK3-Jy-sSE"/>
+                <constraint firstItem="AeW-nA-jw4" firstAttribute="leading" secondItem="oy5-Ob-Wc0" secondAttribute="leading" constant="7.1054273576010019e-15" id="DMM-WH-ikk"/>
+                <constraint firstItem="icO-PL-Emq" firstAttribute="trailing" secondItem="oy5-Ob-Wc0" secondAttribute="trailing" constant="8.6666666666666856" id="GYj-Hi-55M"/>
+                <constraint firstItem="icO-PL-Emq" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="8" id="LlW-CS-rZ0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oy5-Ob-Wc0" secondAttribute="trailing" priority="750" constant="15.333333333333314" id="TIN-Yv-4Pv"/>
+                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.144366" id="Und-EX-pao"/>
+                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="asj-WR-eeE"/>
+                <constraint firstItem="kiE-ku-lYe" firstAttribute="trailing" secondItem="oy5-Ob-Wc0" secondAttribute="trailing" constant="-5.6843418860808015e-14" id="g58-8T-vq8"/>
+                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17.666666666666664" id="iQp-A4-wXt"/>
+                <constraint firstItem="AeW-nA-jw4" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="15" id="jIj-sg-qeK"/>
+                <constraint firstItem="kiE-ku-lYe" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="50" id="pR3-uX-bBp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kiE-ku-lYe" secondAttribute="bottom" constant="29" id="uzg-9M-bWT"/>
+            </constraints>
+            <point key="canvasLocation" x="-156.4885496183206" y="-27.464788732394368"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="g0">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="g200">
+            <color red="0.48600000143051147" green="0.4779999852180481" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="g900">
+            <color red="0.14100000262260437" green="0.13300000131130219" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightRedGradient">
+            <color red="1" green="0.9179999828338623" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="p300">
+            <color red="0.52899998426437378" green="0.11800000071525574" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
