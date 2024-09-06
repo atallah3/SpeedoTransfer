@@ -23,9 +23,10 @@ class RegisterVC: UIViewController {
         configureRegisterVC()
     }
     
-    //MARK: - Private Functions
+    //MARK: - Functions
     private func configureRegisterVC() {
         myView.addGradientBackgroundColor(colors: UIColor.FirstGradientolors)
+        title = "Sign up"
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
@@ -55,11 +56,15 @@ class RegisterVC: UIViewController {
         navigationController?.pushViewController(loginVC, animated: true)
     }
     
+    private func goToContinuedSignUpScreen() {
+        let signUp = ContinuedSignUpVC(nibName: "ContinuedSignUpVC", bundle: nil)
+        navigationController?.pushViewController(signUp, animated: true)
+    }
+    
     //MARK: - @IBActions
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
-        print("btn tapped")
         guard isValidData() else { return }
-        goToLoginScreen()
+        goToContinuedSignUpScreen()
     }
     
     @IBAction func signInBtnTapped(_ sender: UIButton) {

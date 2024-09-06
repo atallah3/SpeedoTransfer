@@ -13,4 +13,14 @@ extension UIViewController {
         alertVC.addAction(UIAlertAction(title: buttonLabel ?? "Ok", style: .default))
         self.present(alertVC, animated: true)
     }
+    
+    func showBottomSheet(viewController: UIViewController) {
+        if let sheet = viewController.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 50
+        }
+        
+        present(viewController, animated: true, completion: nil)
+    }
 }
