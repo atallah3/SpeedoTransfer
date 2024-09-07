@@ -20,6 +20,8 @@
 		0DB883542C819BE600A487BE /* Error.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB883532C819BE600A487BE /* Error.storyboard */; };
 		0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883552C819C3D00A487BE /* Error404VC.swift */; };
 		0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB883572C81A2A400A487BE /* NoInternetVC.swift */; };
+		0DCC90DE2C8BDAF2009FEACA /* BottomSheetTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCC90DC2C8BDAF1009FEACA /* BottomSheetTransferVC.swift */; };
+		0DCC90DF2C8BDAF2009FEACA /* BottomSheetTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DCC90DD2C8BDAF1009FEACA /* BottomSheetTransferVC.xib */; };
 		F72D187B2C8B396800211504 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D18792C8B396800211504 /* OnboardingVC.swift */; };
 		F72D187C2C8B396800211504 /* OnboardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72D187A2C8B396800211504 /* OnboardingVC.xib */; };
 		F72D18802C8B448A00211504 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D187E2C8B448A00211504 /* OnboardingCollectionViewCell.swift */; };
@@ -120,6 +122,8 @@
 		0DB883532C819BE600A487BE /* Error.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Error.storyboard; sourceTree = "<group>"; };
 		0DB883552C819C3D00A487BE /* Error404VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error404VC.swift; sourceTree = "<group>"; };
 		0DB883572C81A2A400A487BE /* NoInternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoInternetVC.swift; sourceTree = "<group>"; };
+		0DCC90DC2C8BDAF1009FEACA /* BottomSheetTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTransferVC.swift; sourceTree = "<group>"; };
+		0DCC90DD2C8BDAF1009FEACA /* BottomSheetTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetTransferVC.xib; sourceTree = "<group>"; };
 		F72D18792C8B396800211504 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		F72D187A2C8B396800211504 /* OnboardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingVC.xib; sourceTree = "<group>"; };
 		F72D187E2C8B448A00211504 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -283,6 +287,8 @@
 				0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */,
 				0D575F6C2C8BA6FB006ACCB6 /* AmountTransferVC.swift */,
 				0D575F6D2C8BA6FB006ACCB6 /* AmountTransferVC.xib */,
+				0DCC90DC2C8BDAF1009FEACA /* BottomSheetTransferVC.swift */,
+				0DCC90DD2C8BDAF1009FEACA /* BottomSheetTransferVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,6 +650,7 @@
 				F7FAF7422C7E27E10057B655 /* Base in Resources */,
 				F73C1B8F2C7F2C7200A5A2C6 /* Inter_28pt-Italic.ttf in Resources */,
 				F73C1BA02C7F2C7200A5A2C6 /* Inter_24pt-Italic.ttf in Resources */,
+				0DCC90DF2C8BDAF2009FEACA /* BottomSheetTransferVC.xib in Resources */,
 				F73C1B902C7F2C7200A5A2C6 /* Inter_28pt-ExtraLight.ttf in Resources */,
 				F72D187C2C8B396800211504 /* OnboardingVC.xib in Resources */,
 				F73C1B832C7F2C7200A5A2C6 /* Inter_18pt-Medium.ttf in Resources */,
@@ -680,6 +687,7 @@
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,
+				0DCC90DE2C8BDAF2009FEACA /* BottomSheetTransferVC.swift in Sources */,
 				0D575F6E2C8BA6FB006ACCB6 /* AmountTransferVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
 				F74DBA482C89D5570063942A /* STTabBarController.swift in Sources */,
