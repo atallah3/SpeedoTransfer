@@ -14,6 +14,10 @@
 		0D0626D62C89E58300725116 /* TransactionsTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */; };
 		0D0626DD2C89FDCF00725116 /* HomeTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */; };
 		0D0626DE2C89FDCF00725116 /* HomeTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */; };
+		0D1083F02C8C668D005C16CF /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1083EE2C8C668D005C16CF /* ServerError.swift */; };
+		0D1083F12C8C668D005C16CF /* ServerError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1083EF2C8C668D005C16CF /* ServerError.xib */; };
+		0D1083F42C8C66ED005C16CF /* inernetLostErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1083F22C8C66ED005C16CF /* inernetLostErrorVC.swift */; };
+		0D1083F52C8C66ED005C16CF /* inernetLostErrorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1083F32C8C66ED005C16CF /* inernetLostErrorVC.xib */; };
 		0D575F6E2C8BA6FB006ACCB6 /* AmountTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D575F6C2C8BA6FB006ACCB6 /* AmountTransferVC.swift */; };
 		0D575F6F2C8BA6FB006ACCB6 /* AmountTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D575F6D2C8BA6FB006ACCB6 /* AmountTransferVC.xib */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
@@ -272,7 +276,6 @@
 		0D39A9922C819AB300C63F69 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0DB883532C819BE600A487BE /* Error.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,8 +283,10 @@
 		0D39A9932C819AC700C63F69 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0DB883552C819C3D00A487BE /* Error404VC.swift */,
-				0DB883572C81A2A400A487BE /* NoInternetVC.swift */,
+				0D1083EE2C8C668D005C16CF /* ServerError.swift */,
+				0D1083EF2C8C668D005C16CF /* ServerError.xib */,
+				0D1083F22C8C66ED005C16CF /* inernetLostErrorVC.swift */,
+				0D1083F32C8C66ED005C16CF /* inernetLostErrorVC.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */,
 				0D575F6C2C8BA6FB006ACCB6 /* AmountTransferVC.swift */,
 				0D575F6D2C8BA6FB006ACCB6 /* AmountTransferVC.xib */,
+				0DCC90DD2C8BDAF1009FEACA /* BottomSheetTransferVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -688,6 +694,7 @@
 				F73C1B9E2C7F2C7200A5A2C6 /* Inter_24pt-Bold.ttf in Resources */,
 				F73C1B9A2C7F2C7200A5A2C6 /* Inter_28pt-Bold.ttf in Resources */,
 				F73C1B7D2C7F2C7200A5A2C6 /* Inter_18pt-BoldItalic.ttf in Resources */,
+				0D1083F12C8C668D005C16CF /* ServerError.xib in Resources */,
 				F73C1B9C2C7F2C7200A5A2C6 /* Inter_28pt-MediumItalic.ttf in Resources */,
 				F73C1B952C7F2C7200A5A2C6 /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
 				F71D7FAF2C8C5A740087F3DD /* FavoriteListCellTableViewCell.xib in Resources */,
@@ -712,7 +719,6 @@
 				F73C1B7F2C7F2C7200A5A2C6 /* Inter_24pt-Regular.ttf in Resources */,
 				F73C1B8E2C7F2C7200A5A2C6 /* Inter_24pt-BoldItalic.ttf in Resources */,
 				F73C1BA62C7F2C7200A5A2C6 /* Inter_24pt-BlackItalic.ttf in Resources */,
-				0DB883542C819BE600A487BE /* Error.storyboard in Resources */,
 				F73C1B812C7F2C7200A5A2C6 /* Inter_18pt-Italic.ttf in Resources */,
 				F73C1B862C7F2C7200A5A2C6 /* Inter_28pt-ThinItalic.ttf in Resources */,
 				F73C1B992C7F2C7200A5A2C6 /* Inter_18pt-Regular.ttf in Resources */,
@@ -725,6 +731,7 @@
 				F73E9CBF2C8C393C00FE1713 /* MoreVC.xib in Resources */,
 				F72D187C2C8B396800211504 /* OnboardingVC.xib in Resources */,
 				F73C1B832C7F2C7200A5A2C6 /* Inter_18pt-Medium.ttf in Resources */,
+				0D1083F52C8C66ED005C16CF /* inernetLostErrorVC.xib in Resources */,
 				F73C1BA82C7F2C7200A5A2C6 /* Inter_24pt-ExtraLightItalic.ttf in Resources */,
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
 				0D0626CB2C89CA3300725116 /* ConfirmationTransferVC.xib in Resources */,
@@ -775,12 +782,12 @@
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */,
 				0D0626CA2C89CA3300725116 /* ConfirmationTransferVC.swift in Sources */,
-				0DB883582C81A2A400A487BE /* NoInternetVC.swift in Sources */,
 				0D0626DD2C89FDCF00725116 /* HomeTransferVC.swift in Sources */,
 				F73E97F32C8AF9850052E25A /* CountryBottomSheetVC.swift in Sources */,
 				0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */,
-				0DB883562C819C3D00A487BE /* Error404VC.swift in Sources */,
+				0D1083F42C8C66ED005C16CF /* inernetLostErrorVC.swift in Sources */,
 				F72D18842C8B4AAE00211504 /* OnboardingSlide.swift in Sources */,
+				0D1083F02C8C668D005C16CF /* ServerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
