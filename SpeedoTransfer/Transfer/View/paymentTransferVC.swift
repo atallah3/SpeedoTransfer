@@ -1,5 +1,5 @@
 //
-//  confirmationTransferVC.swift
+//  paymentTransferVC.swift
 //  SpeedoTransfer
 //
 //  Created by Abdullah Silva on 07/09/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class confirmationTransferVC: UIViewController {
+class paymentTransferVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
