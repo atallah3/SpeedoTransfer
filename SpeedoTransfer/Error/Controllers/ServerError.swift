@@ -1,5 +1,5 @@
 //
-//  Error404VC.swift
+//  ServerError.swift
 //  SpeedoTransfer
 //
 //  Created by Abdullah Silva on 29/08/2024.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class Error404VC: UIViewController {
+class ServerError: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
