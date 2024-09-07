@@ -7,8 +7,11 @@
 
 import UIKit
 
-class FavoriteListCellTableViewCell: UITableViewCell {
+class FavoriteListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cardNumberLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +23,12 @@ class FavoriteListCellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    private func setupCellAttributes() {
+        self.backgroundColor = .clear
+    }
+    
+    func configureCell(data: DummyData) {
+        nameLabel.text = data.name
+        cardNumberLabel.text = data.cardNum
+    }
 }
