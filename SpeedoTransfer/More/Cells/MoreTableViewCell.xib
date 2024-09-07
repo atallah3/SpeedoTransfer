@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="MoreTableViewCell" customModule="SpeedoTransfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoreUser" translatesAutoresizingMaskIntoConstraints="NO" id="9Ug-W0-XCh">
+                        <rect key="frame" x="16" y="18" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="1Jt-Ja-DWg"/>
+                            <constraint firstAttribute="height" constant="24" id="9X8-tt-Vb6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-8t-Qmg">
+                        <rect key="frame" x="48" y="19.666666666666668" width="240" height="21.000000000000004"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="g200"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gnG-8t-Qmg" firstAttribute="leading" secondItem="9Ug-W0-XCh" secondAttribute="trailing" constant="8" id="7gV-2W-yiq"/>
+                    <constraint firstAttribute="trailing" secondItem="gnG-8t-Qmg" secondAttribute="trailing" constant="32" id="8v1-uw-4ha"/>
+                    <constraint firstItem="9Ug-W0-XCh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EPj-eO-4nH"/>
+                    <constraint firstItem="9Ug-W0-XCh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="QkD-N2-7AI"/>
+                    <constraint firstItem="gnG-8t-Qmg" firstAttribute="centerY" secondItem="9Ug-W0-XCh" secondAttribute="centerY" id="XNw-yk-CYp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="moreImageView" destination="9Ug-W0-XCh" id="V1X-5M-tfk"/>
+                <outlet property="nameLabel" destination="gnG-8t-Qmg" id="Vst-D3-YoX"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MoreUser" width="24" height="24"/>
+        <namedColor name="g200">
+            <color red="0.48600000143051147" green="0.4779999852180481" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

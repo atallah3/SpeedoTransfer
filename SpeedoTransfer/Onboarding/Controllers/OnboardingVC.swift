@@ -16,13 +16,13 @@ class OnboardingVC: UIViewController {
     //MARK: - Properties
     var slides: [OnboardingSlide] = []
     var currentPage = 0
+    
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
         configureCollectoinView()
         getSlideData()
-        
     }
 
     //MARK: - Functions
@@ -50,7 +50,7 @@ class OnboardingVC: UIViewController {
     private func goToRegisterScreen() {
         let registerVC = RegisterVC(nibName: "RegisterVC", bundle: nil)
         registerVC.modalPresentationStyle = .fullScreen
-        self.present(registerVC, animated: true)
+        self.navigationController?.pushViewController(registerVC, animated: true)
     }
     
     private func goToNextOnboardingCell() {

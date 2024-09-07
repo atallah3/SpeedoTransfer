@@ -16,6 +16,10 @@ extension UIViewController {
     
     func showBottomSheet(viewController: UIViewController) {
         if let sheet = viewController.sheetPresentationController {
+            
+//            let customDetent = UISheetPresentationController.Detent.custom { context in
+//                return context.maximumDetentValue / 3
+//            }
             sheet.detents = [.medium()]
             sheet.prefersGrabberVisible = true
             sheet.preferredCornerRadius = 50

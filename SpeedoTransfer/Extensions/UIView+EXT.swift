@@ -33,5 +33,14 @@ extension UIView {
             self.layer.insertSublayer(gradientLayer, at: 0)
         }
     }
+    
+    func addShadow(to view: UIView, shadowColor: CGColor) {
+        view.layer.shadowColor = shadowColor
+        view.layer.shadowOpacity = 0.2
+        view.layer.shadowOffset = CGSize(width: 1, height: 1)
+        view.layer.shadowRadius = 3
+//        view.clipsToBounds = false
+        view.layer.masksToBounds = false
+    }
 }
 

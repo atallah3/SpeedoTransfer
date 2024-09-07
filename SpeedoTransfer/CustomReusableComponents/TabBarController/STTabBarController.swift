@@ -25,8 +25,7 @@ class STTabBarController: UITabBarController {
         transactionsVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
         let cardsVC = UIViewController()
         cardsVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
-        let moreVC = UIViewController()
-        moreVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
+        let moreVC = MoreVC()
         
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
         transferVC.tabBarItem = UITabBarItem(title: "Transfer", image: UIImage(named: "transfer"), tag: 1)
