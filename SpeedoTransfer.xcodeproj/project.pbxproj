@@ -25,6 +25,8 @@
 		0D81EE082C8C7A9B00BBC33C /* confirmationTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D81EE062C8C7A9B00BBC33C /* confirmationTransferVC.swift */; };
 		0D81EE092C8C7A9B00BBC33C /* confirmationTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D81EE072C8C7A9B00BBC33C /* confirmationTransferVC.xib */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
+		0DD809972C8E4226001287BD /* FirstTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD809952C8E4226001287BD /* FirstTransactionVC.swift */; };
+		0DD809982C8E4226001287BD /* FirstTransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD809962C8E4226001287BD /* FirstTransactionVC.xib */; };
 		F71D7FA42C8C3CAF0087F3DD /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */; };
 		F71D7FA72C8C478C0087F3DD /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FA62C8C478C0087F3DD /* HelpVC.xib */; };
 		F71D7FA82C8C478C0087F3DD /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA52C8C478C0087F3DD /* HelpVC.swift */; };
@@ -143,6 +145,8 @@
 		0D81EE062C8C7A9B00BBC33C /* confirmationTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = confirmationTransferVC.swift; path = ../View/confirmationTransferVC.swift; sourceTree = "<group>"; };
 		0D81EE072C8C7A9B00BBC33C /* confirmationTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmationTransferVC.xib; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
+		0DD809952C8E4226001287BD /* FirstTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTransactionVC.swift; sourceTree = "<group>"; };
+		0DD809962C8E4226001287BD /* FirstTransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTransactionVC.xib; sourceTree = "<group>"; };
 		F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
 		F71D7FA52C8C478C0087F3DD /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		F71D7FA62C8C478C0087F3DD /* HelpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
@@ -329,7 +333,7 @@
 		0D6FB1CF2C8CF9E70038DC81 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				0D6FB1D12C8CF9FE0038DC81 /* Controllers */,
+				0DD809942C8E41D5001287BD /* controllers */,
 				0D6FB1D02C8CF9F40038DC81 /* View */,
 			);
 			path = Transactions;
@@ -344,11 +348,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0D6FB1D12C8CF9FE0038DC81 /* Controllers */ = {
+		0DD809942C8E41D5001287BD /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0DD809952C8E4226001287BD /* FirstTransactionVC.swift */,
+				0DD809962C8E4226001287BD /* FirstTransactionVC.xib */,
 			);
-			path = Controllers;
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		F71D7FB12C8C5A880087F3DD /* Cells */ = {
@@ -720,6 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD809982C8E4226001287BD /* FirstTransactionVC.xib in Resources */,
 				F73C1B782C7F2C7200A5A2C6 /* Inter_24pt-ThinItalic.ttf in Resources */,
 				F73C1B9B2C7F2C7200A5A2C6 /* Inter_24pt-ExtraLight.ttf in Resources */,
 				F73C1B772C7F2C7200A5A2C6 /* Inter_24pt-Light.ttf in Resources */,
@@ -826,6 +833,7 @@
 				0D6FB1D42C8CFA510038DC81 /* TransactionVCTableViewCell.swift in Sources */,
 				F73DF2B72C8D862B0086249A /* ProfileVC.swift in Sources */,
 				F73DF2C72C8D92610086249A /* UserProfile.swift in Sources */,
+				0DD809972C8E4226001287BD /* FirstTransactionVC.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,

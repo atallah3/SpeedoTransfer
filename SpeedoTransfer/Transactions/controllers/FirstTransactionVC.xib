@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter.ttc">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstTransactionVC" customModule="SpeedoTransfer" customModuleProvider="target">
+            <connections>
+                <outlet property="lastTrasnactionsTable" destination="7Zz-pY-ArE" id="g5m-BJ-FV8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-pY-ArE">
+                    <rect key="frame" x="22" y="186" width="355" height="614"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Last Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-ES-aaF">
+                    <rect key="frame" x="22" y="138" width="355" height="25"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                    <color key="textColor" name="g900"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="lightRedGradient"/>
+            <constraints>
+                <constraint firstItem="vqz-ES-aaF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0293427" id="0r5-Ep-FJY"/>
+                <constraint firstItem="vqz-ES-aaF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="79" id="41r-8m-1BW"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="leading" secondItem="vqz-ES-aaF" secondAttribute="leading" id="Awe-Et-ExZ"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="trailing" secondItem="vqz-ES-aaF" secondAttribute="trailing" id="CBD-VR-axx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Zz-pY-ArE" secondAttribute="bottom" constant="18" id="Crx-Mb-xAn"/>
+                <constraint firstItem="vqz-ES-aaF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="FhZ-js-tIp"/>
+                <constraint firstItem="vqz-ES-aaF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.54877" constant="139.3333333333334" id="KGL-O8-Lfb"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="top" secondItem="vqz-ES-aaF" secondAttribute="bottom" constant="23" id="bdG-Vt-GNQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vqz-ES-aaF" secondAttribute="trailing" constant="16" id="czL-g2-IJg"/>
+            </constraints>
+            <point key="canvasLocation" x="101.5267175572519" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="g900">
+            <color red="0.14100000262260437" green="0.13300000131130219" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightRedGradient">
+            <color red="1" green="0.9179999828338623" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
