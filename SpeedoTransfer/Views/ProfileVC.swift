@@ -23,15 +23,16 @@ class ProfileVC: UIViewController {
     }
     
     //MARK: - Functions
+    private func configureViewController() {
+        view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
+        title = "Profile"
+    }
+    
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
-    }
-    
-    private func configureViewController() {
-        view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
     }
     
     private func getProfileData() {
@@ -50,10 +51,16 @@ class ProfileVC: UIViewController {
         self.navigationController?.pushViewController(favoriteVC, animated: true)
     }
     
+    private func goToProfileInfoScreen() {
+        let ProfileVC = ProfileInformationVC(nibName: "ProfileInformationVC", bundle: nil)
+        self.navigationController?.pushViewController(ProfileVC, animated: true)
+    }
+
+    
     private func navigateToSelectedCell(indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            print("go to Personal information")
+            goToProfileInfoScreen()
         case 1:
             print("go to Setting")
         case 2:

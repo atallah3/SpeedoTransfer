@@ -23,7 +23,6 @@ class ContinuedSignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
-        
     }
     
     //MARK: - Functions

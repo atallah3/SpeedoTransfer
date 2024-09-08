@@ -94,6 +94,11 @@
 		F73C1BAC2C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B762C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf */; };
 		F73DF2B72C8D862B0086249A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF2B52C8D862B0086249A /* ProfileVC.swift */; };
 		F73DF2B82C8D862B0086249A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73DF2B62C8D862B0086249A /* ProfileVC.xib */; };
+		F73DF2BD2C8D8D3C0086249A /* ProfileInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF2BB2C8D8D3C0086249A /* ProfileInformationVC.swift */; };
+		F73DF2BE2C8D8D3C0086249A /* ProfileInformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73DF2BC2C8D8D3C0086249A /* ProfileInformationVC.xib */; };
+		F73DF2C42C8D8E140086249A /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF2C22C8D8E140086249A /* InformationTableViewCell.swift */; };
+		F73DF2C52C8D8E140086249A /* InformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73DF2C32C8D8E140086249A /* InformationTableViewCell.xib */; };
+		F73DF2C72C8D92610086249A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF2C62C8D92610086249A /* UserProfile.swift */; };
 		F73E97E32C8AD9D50052E25A /* ContinuedSignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73E97E22C8AD9D50052E25A /* ContinuedSignUpVC.xib */; };
 		F73E97E42C8AD9D50052E25A /* ContinuedSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E97E12C8AD9D50052E25A /* ContinuedSignUpVC.swift */; };
 		F73E97F22C8AF9850052E25A /* CountryBottomSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73E97F12C8AF9850052E25A /* CountryBottomSheetVC.xib */; };
@@ -207,6 +212,11 @@
 		F73C1B762C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-ExtraLight.ttf"; sourceTree = "<group>"; };
 		F73DF2B52C8D862B0086249A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = Views/ProfileVC.swift; sourceTree = "<group>"; };
 		F73DF2B62C8D862B0086249A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		F73DF2BB2C8D8D3C0086249A /* ProfileInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationVC.swift; sourceTree = "<group>"; };
+		F73DF2BC2C8D8D3C0086249A /* ProfileInformationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInformationVC.xib; sourceTree = "<group>"; };
+		F73DF2C22C8D8E140086249A /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		F73DF2C32C8D8E140086249A /* InformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationTableViewCell.xib; sourceTree = "<group>"; };
+		F73DF2C62C8D92610086249A /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F73E97E12C8AD9D50052E25A /* ContinuedSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedSignUpVC.swift; sourceTree = "<group>"; };
 		F73E97E22C8AD9D50052E25A /* ContinuedSignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContinuedSignUpVC.xib; sourceTree = "<group>"; };
 		F73E97F02C8AF9850052E25A /* CountryBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryBottomSheetVC.swift; sourceTree = "<group>"; };
@@ -428,6 +438,17 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		F73DF2BF2C8D8DDD0086249A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F74203582C8339C700F3481A /* ProfileTableViewCell.swift */,
+				F74203592C8339C700F3481A /* ProfileTableViewCell.xib */,
+				F73DF2C22C8D8E140086249A /* InformationTableViewCell.swift */,
+				F73DF2C32C8D8E140086249A /* InformationTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		F73E97EF2C8AF8EF0052E25A /* CountryBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +514,7 @@
 		F74203512C83335300F3481A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F73DF2BF2C8D8DDD0086249A /* Cells */,
 				F742035E2C833FFA00F3481A /* Models */,
 				F74203552C83338D00F3481A /* Views */,
 				F74203542C83338300F3481A /* Controllers */,
@@ -504,7 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				F73DF2B52C8D862B0086249A /* ProfileVC.swift */,
-				F74203582C8339C700F3481A /* ProfileTableViewCell.swift */,
+				F73DF2BB2C8D8D3C0086249A /* ProfileInformationVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -512,8 +534,8 @@
 		F74203552C83338D00F3481A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F74203592C8339C700F3481A /* ProfileTableViewCell.xib */,
 				F73DF2B62C8D862B0086249A /* ProfileVC.xib */,
+				F73DF2BC2C8D8D3C0086249A /* ProfileInformationVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -522,6 +544,7 @@
 			isa = PBXGroup;
 			children = (
 				F742035C2C833FCF00F3481A /* ProfileCell.swift */,
+				F73DF2C62C8D92610086249A /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -722,6 +745,7 @@
 				F73C1B9E2C7F2C7200A5A2C6 /* Inter_24pt-Bold.ttf in Resources */,
 				F73C1B9A2C7F2C7200A5A2C6 /* Inter_28pt-Bold.ttf in Resources */,
 				F73C1B7D2C7F2C7200A5A2C6 /* Inter_18pt-BoldItalic.ttf in Resources */,
+				F73DF2BE2C8D8D3C0086249A /* ProfileInformationVC.xib in Resources */,
 				0D1083F12C8C668D005C16CF /* (null) in Resources */,
 				F73C1B9C2C7F2C7200A5A2C6 /* Inter_28pt-MediumItalic.ttf in Resources */,
 				F73C1B952C7F2C7200A5A2C6 /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
@@ -770,6 +794,7 @@
 				0D575F6F2C8BA6FB006ACCB6 /* AmountTransferVC.xib in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
 				F73C1B942C7F2C7200A5A2C6 /* Inter_24pt-ExtraBold.ttf in Resources */,
+				F73DF2C52C8D8E140086249A /* InformationTableViewCell.xib in Resources */,
 				F73C1BA42C7F2C7200A5A2C6 /* Inter_28pt-BoldItalic.ttf in Resources */,
 				F742035A2C8339C700F3481A /* ProfileTableViewCell.xib in Resources */,
 				F73E97F22C8AF9850052E25A /* CountryBottomSheetVC.xib in Resources */,
@@ -789,6 +814,7 @@
 				F71D7FA82C8C478C0087F3DD /* HelpVC.swift in Sources */,
 				F71D7FA42C8C3CAF0087F3DD /* MoreCell.swift in Sources */,
 				F72D18862C8B4F8500211504 /* Country.swift in Sources */,
+				F73DF2C42C8D8E140086249A /* InformationTableViewCell.swift in Sources */,
 				F73E97E42C8AD9D50052E25A /* ContinuedSignUpVC.swift in Sources */,
 				0D6FB1CD2C8C92D00038DC81 /* paymentTransferVC.swift in Sources */,
 				F74DBA5C2C8A148F0063942A /* UIViewController+EXT.swift in Sources */,
@@ -799,10 +825,12 @@
 				F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */,
 				0D6FB1D42C8CFA510038DC81 /* TransactionVCTableViewCell.swift in Sources */,
 				F73DF2B72C8D862B0086249A /* ProfileVC.swift in Sources */,
+				F73DF2C72C8D92610086249A /* UserProfile.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,
 				0D575F6E2C8BA6FB006ACCB6 /* AmountTransferVC.swift in Sources */,
+				F73DF2BD2C8D8D3C0086249A /* ProfileInformationVC.swift in Sources */,
 				F71D7FAC2C8C594B0087F3DD /* FavoriteListVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
 				F74DBA482C89D5570063942A /* STTabBarController.swift in Sources */,
