@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,8 +26,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Zz-pY-ArE">
-                    <rect key="frame" x="22" y="186" width="355" height="614"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="18" y="186" width="360" height="632"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Last Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-ES-aaF">
                     <rect key="frame" x="22" y="138" width="355" height="25"/>
@@ -42,13 +42,15 @@
             <constraints>
                 <constraint firstItem="vqz-ES-aaF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0293427" id="0r5-Ep-FJY"/>
                 <constraint firstItem="vqz-ES-aaF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="79" id="41r-8m-1BW"/>
-                <constraint firstItem="7Zz-pY-ArE" firstAttribute="leading" secondItem="vqz-ES-aaF" secondAttribute="leading" id="Awe-Et-ExZ"/>
-                <constraint firstItem="7Zz-pY-ArE" firstAttribute="trailing" secondItem="vqz-ES-aaF" secondAttribute="trailing" id="CBD-VR-axx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Zz-pY-ArE" secondAttribute="bottom" constant="18" id="Crx-Mb-xAn"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="leading" secondItem="vqz-ES-aaF" secondAttribute="leading" constant="-4" id="Awe-Et-ExZ"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="trailing" secondItem="vqz-ES-aaF" secondAttribute="trailing" constant="1" id="CBD-VR-axx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7Zz-pY-ArE" secondAttribute="bottom" id="Crx-Mb-xAn"/>
                 <constraint firstItem="vqz-ES-aaF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="FhZ-js-tIp"/>
                 <constraint firstItem="vqz-ES-aaF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.54877" constant="139.3333333333334" id="KGL-O8-Lfb"/>
                 <constraint firstItem="7Zz-pY-ArE" firstAttribute="top" secondItem="vqz-ES-aaF" secondAttribute="bottom" constant="23" id="bdG-Vt-GNQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vqz-ES-aaF" secondAttribute="trailing" constant="16" id="czL-g2-IJg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Zz-pY-ArE" secondAttribute="trailing" constant="15" id="hSl-8C-4PI"/>
+                <constraint firstItem="7Zz-pY-ArE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="mqJ-T6-Vm9"/>
             </constraints>
             <point key="canvasLocation" x="101.5267175572519" y="-11.267605633802818"/>
         </view>
@@ -60,8 +62,5 @@
         <namedColor name="lightRedGradient">
             <color red="1" green="0.9179999828338623" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

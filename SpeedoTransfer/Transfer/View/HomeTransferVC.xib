@@ -27,13 +27,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Recent transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-nA-jw4">
-                    <rect key="frame" x="17.666666666666671" y="287" width="150" height="20"/>
+                    <rect key="frame" x="17.666666666666671" y="287" width="150" height="19.666666666666686"/>
                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                     <color key="textColor" name="g900"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kiE-ku-lYe">
-                    <rect key="frame" x="17.666666666666657" y="322" width="360" height="467"/>
+                    <rect key="frame" x="17.666666666666657" y="322" width="360" height="530"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oy5-Ob-Wc0">
@@ -86,7 +86,7 @@
                 <constraint firstItem="oy5-Ob-Wc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17.666666666666664" id="iQp-A4-wXt"/>
                 <constraint firstItem="AeW-nA-jw4" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="15" id="jIj-sg-qeK"/>
                 <constraint firstItem="kiE-ku-lYe" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="50" id="pR3-uX-bBp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kiE-ku-lYe" secondAttribute="bottom" constant="29" id="uzg-9M-bWT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kiE-ku-lYe" secondAttribute="bottom" constant="-34" id="uzg-9M-bWT"/>
             </constraints>
             <point key="canvasLocation" x="-156.4885496183206" y="-27.464788732394368"/>
         </view>

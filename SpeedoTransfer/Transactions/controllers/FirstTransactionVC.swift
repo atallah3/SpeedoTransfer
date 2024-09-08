@@ -30,5 +30,4 @@ class FirstTransactionVC: UIViewController,UITableViewDelegate, UITableViewDataS
         return 121
     }
 
-
 }
