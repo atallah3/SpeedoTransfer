@@ -27,6 +27,8 @@
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		0DD809972C8E4226001287BD /* FirstTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD809952C8E4226001287BD /* FirstTransactionVC.swift */; };
 		0DD809982C8E4226001287BD /* FirstTransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD809962C8E4226001287BD /* FirstTransactionVC.xib */; };
+		0DD8099B2C8E52E5001287BD /* TransactionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD809992C8E52E5001287BD /* TransactionDetailsVC.swift */; };
+		0DD8099C2C8E52E5001287BD /* TransactionDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD8099A2C8E52E5001287BD /* TransactionDetailsVC.xib */; };
 		F71D7FA42C8C3CAF0087F3DD /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */; };
 		F71D7FA72C8C478C0087F3DD /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FA62C8C478C0087F3DD /* HelpVC.xib */; };
 		F71D7FA82C8C478C0087F3DD /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA52C8C478C0087F3DD /* HelpVC.swift */; };
@@ -147,6 +149,8 @@
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		0DD809952C8E4226001287BD /* FirstTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTransactionVC.swift; sourceTree = "<group>"; };
 		0DD809962C8E4226001287BD /* FirstTransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTransactionVC.xib; sourceTree = "<group>"; };
+		0DD809992C8E52E5001287BD /* TransactionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsVC.swift; sourceTree = "<group>"; };
+		0DD8099A2C8E52E5001287BD /* TransactionDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsVC.xib; sourceTree = "<group>"; };
 		F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
 		F71D7FA52C8C478C0087F3DD /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		F71D7FA62C8C478C0087F3DD /* HelpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
@@ -344,6 +348,8 @@
 			children = (
 				0D6FB1D22C8CFA510038DC81 /* TransactionVCTableViewCell.swift */,
 				0D6FB1D32C8CFA510038DC81 /* TransactionVCTableViewCell.xib */,
+				0DD809992C8E52E5001287BD /* TransactionDetailsVC.swift */,
+				0DD8099A2C8E52E5001287BD /* TransactionDetailsVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -797,6 +803,7 @@
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
 				F73C1B7C2C7F2C7200A5A2C6 /* Inter_24pt-LightItalic.ttf in Resources */,
 				F73C1B972C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf in Resources */,
+				0DD8099C2C8E52E5001287BD /* TransactionDetailsVC.xib in Resources */,
 				F73DF2B82C8D862B0086249A /* ProfileVC.xib in Resources */,
 				0D575F6F2C8BA6FB006ACCB6 /* AmountTransferVC.xib in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
@@ -852,6 +859,7 @@
 				F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */,
 				0D0626DD2C89FDCF00725116 /* HomeTransferVC.swift in Sources */,
 				F73E97F32C8AF9850052E25A /* CountryBottomSheetVC.swift in Sources */,
+				0DD8099B2C8E52E5001287BD /* TransactionDetailsVC.swift in Sources */,
 				0D81EE082C8C7A9B00BBC33C /* confirmationTransferVC.swift in Sources */,
 				0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */,
 				0D1083F42C8C66ED005C16CF /* (null) in Sources */,

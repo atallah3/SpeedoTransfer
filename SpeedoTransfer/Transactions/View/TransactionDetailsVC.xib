@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter.ttc">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailsVC" customModule="SpeedoTransfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLp-um-8GV">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezo-vO-SWh">
+                            <rect key="frame" x="0.0" y="0.0" width="385" height="892"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hn-Ur-px4">
+                                    <rect key="frame" x="12" y="371" width="360" height="126"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FavorIteListCellBank" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-Pj-EFC">
+                                            <rect key="frame" x="24" y="47" width="32" height="33"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNC-eL-sM7">
+                                            <rect key="frame" x="85" y="7.9999999999999982" width="48" height="24.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                            <color key="textColor" name="p300"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" ambiguous="YES" text="Abdullah Silva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTF-oT-vfa">
+                                            <rect key="frame" x="84.999999999999986" y="51" width="133.66666666666663" height="24.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                            <color key="textColor" name="g900"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" ambiguous="YES" text="Account xxxx2060" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ims-2M-mWZ">
+                                            <rect key="frame" x="84.999999999999986" y="92.333333333333343" width="142.66666666666663" height="19.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.91372549020000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="YTF-oT-vfa" firstAttribute="leading" secondItem="yNu-Pj-EFC" secondAttribute="trailing" constant="28.999999999999986" id="4M3-Fs-9dS"/>
+                                        <constraint firstItem="YTF-oT-vfa" firstAttribute="top" secondItem="YNC-eL-sM7" secondAttribute="bottom" constant="18.666666666666671" id="AtW-QN-4wz"/>
+                                        <constraint firstItem="ims-2M-mWZ" firstAttribute="top" secondItem="YTF-oT-vfa" secondAttribute="bottom" constant="16.999999999999986" id="HdW-RO-0VM"/>
+                                        <constraint firstItem="YNC-eL-sM7" firstAttribute="leading" secondItem="yNu-Pj-EFC" secondAttribute="trailing" constant="29" id="Wqt-pl-hJd"/>
+                                        <constraint firstItem="ims-2M-mWZ" firstAttribute="leading" secondItem="yNu-Pj-EFC" secondAttribute="trailing" constant="28.999999999999986" id="p47-Tx-kiI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooL-y0-E92">
+                                    <rect key="frame" x="12" y="523" width="360" height="126"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FavorIteListCellBank" translatesAutoresizingMaskIntoConstraints="NO" id="49k-z1-6N0">
+                                            <rect key="frame" x="24" y="47" width="32" height="33"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Abdelrahman tallah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mF-pg-Ot4">
+                                            <rect key="frame" x="85.000000000000014" y="53.000000000000007" width="182.33333333333337" height="24.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                            <color key="textColor" name="g900"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yza-vE-fg3">
+                                            <rect key="frame" x="85" y="10.666666666666655" width="23.666666666666671" height="24.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="20"/>
+                                            <color key="textColor" name="p300"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Account xxxx7890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8J-ZO-cYJ">
+                                            <rect key="frame" x="85.000000000000014" y="94.333333333333343" width="141.33333333333337" height="19.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.91372549020000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="2mF-pg-Ot4" firstAttribute="leading" secondItem="yza-vE-fg3" secondAttribute="leading" id="GHq-Qq-Hzx"/>
+                                        <constraint firstItem="yza-vE-fg3" firstAttribute="leading" secondItem="49k-z1-6N0" secondAttribute="trailing" constant="29" id="MVB-RN-lFX"/>
+                                        <constraint firstItem="2mF-pg-Ot4" firstAttribute="top" secondItem="yza-vE-fg3" secondAttribute="bottom" constant="18" id="Tf9-UE-Nlr"/>
+                                        <constraint firstItem="Q8J-ZO-cYJ" firstAttribute="top" secondItem="2mF-pg-Ot4" secondAttribute="bottom" constant="17" id="aSC-oF-7J5"/>
+                                        <constraint firstItem="Q8J-ZO-cYJ" firstAttribute="leading" secondItem="2mF-pg-Ot4" secondAttribute="leading" id="n2M-q9-Qfn"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ellipse 2" translatesAutoresizingMaskIntoConstraints="NO" id="OqY-1y-oFZ">
+                                    <rect key="frame" x="170" y="492" width="44" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="true" translatesAutoresizingMaskIntoConstraints="NO" id="bfA-OD-Vf6">
+                                    <rect key="frame" x="181" y="507" width="23" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transactionsuccessed" translatesAutoresizingMaskIntoConstraints="NO" id="zgt-9h-oET">
+                                    <rect key="frame" x="130" y="124" width="121" height="120"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaM-Bd-WHG">
+                                    <rect key="frame" x="151" y="333" width="83" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                    <color key="textColor" name="p300"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2u-Jg-uYa">
+                                    <rect key="frame" x="114.99999999999999" y="273" width="55.333333333333329" height="29.333333333333314"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="24"/>
+                                    <color key="textColor" name="g900"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transfer amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX6-Fa-IAN">
+                                    <rect key="frame" x="130" y="306.33333333333326" width="125" height="18.666666666666686"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                    <color key="textColor" name="g700"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9x-dH-G9m">
+                                    <rect key="frame" x="190.33333333333334" y="273" width="50.666666666666657" height="29.333333333333314"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="24"/>
+                                    <color key="textColor" name="p300"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gn7-VL-Zgm">
+                                    <rect key="frame" x="12" y="674" width="360" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="458EGP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZv-QW-MqF">
+                                            <rect key="frame" x="290" y="8" width="62" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reference" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juC-sO-NpE">
+                                            <rect key="frame" x="8" y="54" width="78" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g700"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-ju-rS3">
+                                            <rect key="frame" x="8" y="91" width="35" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g700"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123456789876" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9q-e6-6X3">
+                                            <rect key="frame" x="238" y="54" width="114" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 Jul 2024 7:50 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlg-s8-xN5">
+                                            <rect key="frame" x="194" y="91" width="158" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                            <color key="textColor" name="g100"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transfer amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJA-mF-Mmy">
+                                    <rect key="frame" x="22" y="684" width="125" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
+                                    <color key="textColor" name="g700"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="zgt-9h-oET" firstAttribute="top" secondItem="ezo-vO-SWh" secondAttribute="top" constant="124" id="0Fg-cL-Ah8"/>
+                                <constraint firstItem="zgt-9h-oET" firstAttribute="leading" secondItem="ezo-vO-SWh" secondAttribute="leading" constant="130" id="gIb-1e-7en"/>
+                                <constraint firstAttribute="trailing" secondItem="zgt-9h-oET" secondAttribute="trailing" constant="134" id="ngP-Zy-0ip"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ezo-vO-SWh" firstAttribute="leading" secondItem="lLp-um-8GV" secondAttribute="leading" id="JRn-Qb-3tY"/>
+                        <constraint firstItem="ezo-vO-SWh" firstAttribute="width" secondItem="lLp-um-8GV" secondAttribute="width" multiplier="0.98" id="KdY-P8-vR7"/>
+                        <constraint firstAttribute="trailing" secondItem="ezo-vO-SWh" secondAttribute="trailing" constant="8" id="MKg-kj-Rv4"/>
+                        <constraint firstItem="ezo-vO-SWh" firstAttribute="top" secondItem="lLp-um-8GV" secondAttribute="top" id="R10-KH-W34"/>
+                        <constraint firstAttribute="bottom" secondItem="ezo-vO-SWh" secondAttribute="bottom" id="TKn-vh-BWP"/>
+                        <constraint firstItem="ezo-vO-SWh" firstAttribute="height" secondItem="lLp-um-8GV" secondAttribute="height" priority="250" constant="40" id="v6z-bg-NgW"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="JNn-yj-hVU"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Arx-xW-OS9"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lLp-um-8GV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="268-gp-EsB"/>
+                <constraint firstAttribute="bottom" secondItem="lLp-um-8GV" secondAttribute="bottom" id="Vdz-06-cEZ"/>
+                <constraint firstItem="lLp-um-8GV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="agV-QX-Uuj"/>
+                <constraint firstAttribute="trailing" secondItem="lLp-um-8GV" secondAttribute="trailing" id="yt9-fo-iIO"/>
+            </constraints>
+            <point key="canvasLocation" x="35.877862595419849" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse 2" width="44" height="44"/>
+        <image name="FavorIteListCellBank" width="32" height="33"/>
+        <image name="transactionsuccessed" width="121" height="120"/>
+        <image name="true" width="49" height="44"/>
+        <namedColor name="g100">
+            <color red="0.53700000047683716" green="0.53299999237060547" blue="0.52499997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="g700">
+            <color red="0.23499999940395355" green="0.22699999809265137" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="g900">
+            <color red="0.14100000262260437" green="0.13300000131130219" blue="0.11800000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="p300">
+            <color red="0.52899998426437378" green="0.11800000071525574" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

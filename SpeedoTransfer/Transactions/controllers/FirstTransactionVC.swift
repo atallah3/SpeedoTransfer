@@ -29,5 +29,9 @@ class FirstTransactionVC: UIViewController,UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 121
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let toDetail = TransactionDetailsVC(nibName: "TransactionDetailsVC", bundle: nil)
+        navigationController?.pushViewController(toDetail, animated: true)
+    }
 
 }
