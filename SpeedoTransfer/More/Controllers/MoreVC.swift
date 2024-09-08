@@ -46,7 +46,7 @@ class MoreVC: UIViewController {
     }
     
     private func goToHelpVC() {
-        let HelpVC = HelpVCViewController(nibName: "HelpVCViewController", bundle: nil)
+        let HelpVC = HelpVC(nibName: "HelpVC", bundle: nil)
         self.showBottomSheet(viewController: HelpVC)
     }
     
@@ -55,14 +55,18 @@ class MoreVC: UIViewController {
         self.navigationController?.pushViewController(favoriteVC, animated: true)
     }
     
+    private func goToProfileScreen() {
+        let profileVC = ProfileVC(nibName: "ProfileVC", bundle: nil)
+        self.navigationController?.pushViewController(profileVC, animated: true)
+    }
     private func navigateToSelectedTab(indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             print("go to Transfer from wesite")
         case 1:
-           goToFavoriteVC()
+            goToFavoriteVC()
         case 2:
-            print("go to Profile")
+            goToProfileScreen()
         case 3:
             goToHelpVC()
         case 4:

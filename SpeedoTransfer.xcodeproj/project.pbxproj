@@ -26,8 +26,8 @@
 		0D81EE092C8C7A9B00BBC33C /* confirmationTransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D81EE072C8C7A9B00BBC33C /* confirmationTransferVC.xib */; };
 		0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */; };
 		F71D7FA42C8C3CAF0087F3DD /* MoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */; };
-		F71D7FA72C8C478C0087F3DD /* HelpVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FA62C8C478C0087F3DD /* HelpVCViewController.xib */; };
-		F71D7FA82C8C478C0087F3DD /* HelpVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA52C8C478C0087F3DD /* HelpVCViewController.swift */; };
+		F71D7FA72C8C478C0087F3DD /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FA62C8C478C0087F3DD /* HelpVC.xib */; };
+		F71D7FA82C8C478C0087F3DD /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA52C8C478C0087F3DD /* HelpVC.swift */; };
 		F71D7FAB2C8C594B0087F3DD /* FavoriteListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FAA2C8C594B0087F3DD /* FavoriteListVC.xib */; };
 		F71D7FAC2C8C594B0087F3DD /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71D7FA92C8C594B0087F3DD /* FavoriteListVC.swift */; };
 		F71D7FAF2C8C5A740087F3DD /* FavoriteListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D7FAE2C8C5A740087F3DD /* FavoriteListTableViewCell.xib */; };
@@ -92,6 +92,8 @@
 		F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B742C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf */; };
 		F73C1BAB2C7F2C7200A5A2C6 /* Inter_24pt-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B752C7F2C7200A5A2C6 /* Inter_24pt-Thin.ttf */; };
 		F73C1BAC2C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F73C1B762C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf */; };
+		F73DF2B72C8D862B0086249A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DF2B52C8D862B0086249A /* ProfileVC.swift */; };
+		F73DF2B82C8D862B0086249A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73DF2B62C8D862B0086249A /* ProfileVC.xib */; };
 		F73E97E32C8AD9D50052E25A /* ContinuedSignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73E97E22C8AD9D50052E25A /* ContinuedSignUpVC.xib */; };
 		F73E97E42C8AD9D50052E25A /* ContinuedSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E97E12C8AD9D50052E25A /* ContinuedSignUpVC.swift */; };
 		F73E97F22C8AF9850052E25A /* CountryBottomSheetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73E97F12C8AF9850052E25A /* CountryBottomSheetVC.xib */; };
@@ -104,8 +106,6 @@
 		F73E9CC32C8C39EB00FE1713 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73E9CC12C8C39EB00FE1713 /* MoreTableViewCell.xib */; };
 		F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D912C8173D0009DAB14 /* UIView+EXT.swift */; };
 		F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */; };
-		F74203532C83337B00F3481A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74203522C83337B00F3481A /* ProfileVC.swift */; };
-		F74203572C8333BF00F3481A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74203562C8333BF00F3481A /* Profile.storyboard */; };
 		F742035A2C8339C700F3481A /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74203592C8339C700F3481A /* ProfileTableViewCell.xib */; };
 		F742035B2C8339C700F3481A /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74203582C8339C700F3481A /* ProfileTableViewCell.swift */; };
 		F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F742035C2C833FCF00F3481A /* ProfileCell.swift */; };
@@ -139,8 +139,8 @@
 		0D81EE072C8C7A9B00BBC33C /* confirmationTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmationTransferVC.xib; sourceTree = "<group>"; };
 		0DB75CFF2C80A4C000C6DE08 /* Inter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Inter.ttc; path = "../../../../../Downloads/Inter-4.0/Inter.ttc"; sourceTree = "<group>"; };
 		F71D7FA32C8C3CAF0087F3DD /* MoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCell.swift; sourceTree = "<group>"; };
-		F71D7FA52C8C478C0087F3DD /* HelpVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVCViewController.swift; sourceTree = "<group>"; };
-		F71D7FA62C8C478C0087F3DD /* HelpVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVCViewController.xib; sourceTree = "<group>"; };
+		F71D7FA52C8C478C0087F3DD /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		F71D7FA62C8C478C0087F3DD /* HelpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
 		F71D7FA92C8C594B0087F3DD /* FavoriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
 		F71D7FAA2C8C594B0087F3DD /* FavoriteListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteListVC.xib; sourceTree = "<group>"; };
 		F71D7FAD2C8C5A740087F3DD /* FavoriteListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListTableViewCell.swift; sourceTree = "<group>"; };
@@ -205,6 +205,8 @@
 		F73C1B742C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-MediumItalic.ttf"; sourceTree = "<group>"; };
 		F73C1B752C7F2C7200A5A2C6 /* Inter_24pt-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_24pt-Thin.ttf"; sourceTree = "<group>"; };
 		F73C1B762C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter_18pt-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F73DF2B52C8D862B0086249A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = Views/ProfileVC.swift; sourceTree = "<group>"; };
+		F73DF2B62C8D862B0086249A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		F73E97E12C8AD9D50052E25A /* ContinuedSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuedSignUpVC.swift; sourceTree = "<group>"; };
 		F73E97E22C8AD9D50052E25A /* ContinuedSignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContinuedSignUpVC.xib; sourceTree = "<group>"; };
 		F73E97F02C8AF9850052E25A /* CountryBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryBottomSheetVC.swift; sourceTree = "<group>"; };
@@ -217,8 +219,6 @@
 		F73E9CC12C8C39EB00FE1713 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
 		F7411D912C8173D0009DAB14 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EXT.swift"; sourceTree = "<group>"; };
-		F74203522C83337B00F3481A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
-		F74203562C8333BF00F3481A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		F74203582C8339C700F3481A /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		F74203592C8339C700F3481A /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		F742035C2C833FCF00F3481A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -463,7 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				F73E9CBD2C8C393C00FE1713 /* MoreVC.xib */,
-				F71D7FA62C8C478C0087F3DD /* HelpVCViewController.xib */,
+				F71D7FA62C8C478C0087F3DD /* HelpVC.xib */,
 				F71D7FAA2C8C594B0087F3DD /* FavoriteListVC.xib */,
 			);
 			path = Views;
@@ -473,7 +473,7 @@
 			isa = PBXGroup;
 			children = (
 				F73E9CBC2C8C393C00FE1713 /* MoreVC.swift */,
-				F71D7FA52C8C478C0087F3DD /* HelpVCViewController.swift */,
+				F71D7FA52C8C478C0087F3DD /* HelpVC.swift */,
 				F71D7FA92C8C594B0087F3DD /* FavoriteListVC.swift */,
 			);
 			path = Controllers;
@@ -503,7 +503,7 @@
 		F74203542C83338300F3481A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F74203522C83337B00F3481A /* ProfileVC.swift */,
+				F73DF2B52C8D862B0086249A /* ProfileVC.swift */,
 				F74203582C8339C700F3481A /* ProfileTableViewCell.swift */,
 			);
 			name = Controllers;
@@ -512,8 +512,8 @@
 		F74203552C83338D00F3481A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F74203562C8333BF00F3481A /* Profile.storyboard */,
 				F74203592C8339C700F3481A /* ProfileTableViewCell.xib */,
+				F73DF2B62C8D862B0086249A /* ProfileVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -727,7 +727,7 @@
 				F73C1B952C7F2C7200A5A2C6 /* Inter_24pt-SemiBoldItalic.ttf in Resources */,
 				F71D7FAF2C8C5A740087F3DD /* FavoriteListTableViewCell.xib in Resources */,
 				F73C1B9F2C7F2C7200A5A2C6 /* Inter_18pt-Thin.ttf in Resources */,
-				F71D7FA72C8C478C0087F3DD /* HelpVCViewController.xib in Resources */,
+				F71D7FA72C8C478C0087F3DD /* HelpVC.xib in Resources */,
 				F71D7FAB2C8C594B0087F3DD /* FavoriteListVC.xib in Resources */,
 				F72D18812C8B448A00211504 /* OnboardingCollectionViewCell.xib in Resources */,
 				F73E97E32C8AD9D50052E25A /* ContinuedSignUpVC.xib in Resources */,
@@ -742,7 +742,6 @@
 				F73C1B792C7F2C7200A5A2C6 /* Inter_28pt-ExtraBold.ttf in Resources */,
 				0D6FB1D52C8CFA510038DC81 /* TransactionVCTableViewCell.xib in Resources */,
 				F73C1B922C7F2C7200A5A2C6 /* Inter_28pt-BlackItalic.ttf in Resources */,
-				F74203572C8333BF00F3481A /* Profile.storyboard in Resources */,
 				F73C1BA32C7F2C7200A5A2C6 /* Inter_18pt-SemiBold.ttf in Resources */,
 				F73C1B7E2C7F2C7200A5A2C6 /* Inter_28pt-Medium.ttf in Resources */,
 				F73C1B7F2C7F2C7200A5A2C6 /* Inter_24pt-Regular.ttf in Resources */,
@@ -767,6 +766,7 @@
 				F73C1BAA2C7F2C7200A5A2C6 /* Inter_18pt-MediumItalic.ttf in Resources */,
 				F73C1B7C2C7F2C7200A5A2C6 /* Inter_24pt-LightItalic.ttf in Resources */,
 				F73C1B972C7F2C7200A5A2C6 /* Inter_18pt-Black.ttf in Resources */,
+				F73DF2B82C8D862B0086249A /* ProfileVC.xib in Resources */,
 				0D575F6F2C8BA6FB006ACCB6 /* AmountTransferVC.xib in Resources */,
 				F73C1BA52C7F2C7200A5A2C6 /* Inter_24pt-ExtraBoldItalic.ttf in Resources */,
 				F73C1B942C7F2C7200A5A2C6 /* Inter_24pt-ExtraBold.ttf in Resources */,
@@ -786,7 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71D7FA82C8C478C0087F3DD /* HelpVCViewController.swift in Sources */,
+				F71D7FA82C8C478C0087F3DD /* HelpVC.swift in Sources */,
 				F71D7FA42C8C3CAF0087F3DD /* MoreCell.swift in Sources */,
 				F72D18862C8B4F8500211504 /* Country.swift in Sources */,
 				F73E97E42C8AD9D50052E25A /* ContinuedSignUpVC.swift in Sources */,
@@ -798,7 +798,7 @@
 				F73E9CBE2C8C393C00FE1713 /* MoreVC.swift in Sources */,
 				F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */,
 				0D6FB1D42C8CFA510038DC81 /* TransactionVCTableViewCell.swift in Sources */,
-				F74203532C83337B00F3481A /* ProfileVC.swift in Sources */,
+				F73DF2B72C8D862B0086249A /* ProfileVC.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,

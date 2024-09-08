@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,33 +17,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="424" height="122"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-FZ-igM">
-                        <rect key="frame" x="95.999999999999986" y="37" width="164.66666666666663" height="21"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G26-4s-3C6">
-                        <rect key="frame" x="96" y="67" width="105" height="18"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PersonalInformation" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-lW-2qs">
-                        <rect key="frame" x="20" y="37" width="48" height="48"/>
-                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIb-3l-VNn">
+                        <rect key="frame" x="15.999999999999986" y="16" width="240.66666666666663" height="48"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PersonalInformation" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-lW-2qs">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="WC5-I1-2FC">
+                                <rect key="frame" x="75.999999999999986" y="0.0" width="164.66666666666663" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfC-FZ-igM">
+                                        <rect key="frame" x="0.0" y="0.0" width="164.66666666666666" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G26-4s-3C6">
+                                        <rect key="frame" x="0.0" y="30" width="105" height="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="G26-4s-3C6" firstAttribute="bottom" secondItem="TJq-lW-2qs" secondAttribute="bottom" id="0az-Yi-xGf"/>
-                    <constraint firstItem="TJq-lW-2qs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="37" id="LIS-db-MIC"/>
-                    <constraint firstItem="TJq-lW-2qs" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.393443" id="T8p-qu-cMU"/>
-                    <constraint firstItem="G26-4s-3C6" firstAttribute="leading" secondItem="TJq-lW-2qs" secondAttribute="trailing" constant="28" id="VXx-4z-FEC"/>
-                    <constraint firstItem="BfC-FZ-igM" firstAttribute="top" secondItem="TJq-lW-2qs" secondAttribute="top" id="Vaw-Kd-OdD"/>
-                    <constraint firstItem="BfC-FZ-igM" firstAttribute="leading" secondItem="TJq-lW-2qs" secondAttribute="trailing" constant="28" id="aK0-Hq-JAR"/>
-                    <constraint firstItem="G26-4s-3C6" firstAttribute="top" secondItem="BfC-FZ-igM" secondAttribute="bottom" constant="9" id="jEn-t2-nKp"/>
-                    <constraint firstItem="TJq-lW-2qs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="keY-kT-KYD"/>
-                    <constraint firstItem="TJq-lW-2qs" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.113208" id="lh0-IF-V0s"/>
+                    <constraint firstItem="XIb-3l-VNn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Tvj-SS-Hzf"/>
+                    <constraint firstItem="XIb-3l-VNn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="fd8-gt-HHX"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
