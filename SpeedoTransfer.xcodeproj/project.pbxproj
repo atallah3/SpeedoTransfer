@@ -131,6 +131,12 @@
 		F7534F192C877FA600813E5B /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F172C877FA600813E5B /* RegisterVC.xib */; };
 		F7534F1D2C877FD800813E5B /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7534F1B2C877FD800813E5B /* LoginVC.xib */; };
 		F7C1A6152C8C6E3A00EC5468 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C1A6142C8C6E3A00EC5468 /* DummyData.swift */; };
+		F7CFB30C2C8EA9F400AFCAA4 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CFB30B2C8EA9F400AFCAA4 /* SettingVC.xib */; };
+		F7CFB30D2C8EA9F400AFCAA4 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB30A2C8EA9F400AFCAA4 /* SettingVC.swift */; };
+		F7CFB3102C8EAA2500AFCAA4 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CFB30F2C8EAA2500AFCAA4 /* SettingTableViewCell.xib */; };
+		F7CFB3112C8EAA2500AFCAA4 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB30E2C8EAA2500AFCAA4 /* SettingTableViewCell.swift */; };
+		F7CFB3142C8EBCDD00AFCAA4 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */; };
+		F7CFB3152C8EBCDD00AFCAA4 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */; };
 		F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */; };
 		F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73E2C7E27E10057B655 /* Assets.xcassets */; };
 		F7FAF7422C7E27E10057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7412C7E27E10057B655 /* Base */; };
@@ -257,6 +263,12 @@
 		F7534F172C877FA600813E5B /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		F7534F1B2C877FD800813E5B /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		F7C1A6142C8C6E3A00EC5468 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		F7CFB30A2C8EA9F400AFCAA4 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		F7CFB30B2C8EA9F400AFCAA4 /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		F7CFB30E2C8EAA2500AFCAA4 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		F7CFB30F2C8EAA2500AFCAA4 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
 		F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedoTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FAF73E2C7E27E10057B655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -484,6 +496,8 @@
 				F74203592C8339C700F3481A /* ProfileTableViewCell.xib */,
 				F73DF2C22C8D8E140086249A /* InformationTableViewCell.swift */,
 				F73DF2C32C8D8E140086249A /* InformationTableViewCell.xib */,
+				F7CFB30E2C8EAA2500AFCAA4 /* SettingTableViewCell.swift */,
+				F7CFB30F2C8EAA2500AFCAA4 /* SettingTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -566,6 +580,8 @@
 			children = (
 				F73DF2B52C8D862B0086249A /* ProfileVC.swift */,
 				F73DF2BB2C8D8D3C0086249A /* ProfileInformationVC.swift */,
+				F7CFB30A2C8EA9F400AFCAA4 /* SettingVC.swift */,
+				F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -575,6 +591,8 @@
 			children = (
 				F73DF2B62C8D862B0086249A /* ProfileVC.xib */,
 				F73DF2BC2C8D8D3C0086249A /* ProfileInformationVC.xib */,
+				F7CFB30B2C8EA9F400AFCAA4 /* SettingVC.xib */,
+				F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -775,6 +793,7 @@
 				F73C1B872C7F2C7200A5A2C6 /* Inter_18pt-Bold.ttf in Resources */,
 				0DB75D002C80A4C000C6DE08 /* Inter.ttc in Resources */,
 				F73C1B7B2C7F2C7200A5A2C6 /* Inter_28pt-SemiBoldItalic.ttf in Resources */,
+				F7CFB30C2C8EA9F400AFCAA4 /* SettingVC.xib in Resources */,
 				F73C1B912C7F2C7200A5A2C6 /* Inter_28pt-Black.ttf in Resources */,
 				F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */,
 				F73C1BA22C7F2C7200A5A2C6 /* Inter_28pt-Regular.ttf in Resources */,
@@ -800,6 +819,7 @@
 				F73E97F62C8AFA270052E25A /* CountryTableViewCell.xib in Resources */,
 				F7534F192C877FA600813E5B /* RegisterVC.xib in Resources */,
 				F73E9CC32C8C39EB00FE1713 /* MoreTableViewCell.xib in Resources */,
+				F7CFB3102C8EAA2500AFCAA4 /* SettingTableViewCell.xib in Resources */,
 				F73C1B8A2C7F2C7200A5A2C6 /* Inter_24pt-MediumItalic.ttf in Resources */,
 				F73C1B822C7F2C7200A5A2C6 /* Inter_24pt-Medium.ttf in Resources */,
 				F73C1B852C7F2C7200A5A2C6 /* Inter_28pt-Thin.ttf in Resources */,
@@ -840,6 +860,7 @@
 				F73C1B942C7F2C7200A5A2C6 /* Inter_24pt-ExtraBold.ttf in Resources */,
 				F73DF2C52C8D8E140086249A /* InformationTableViewCell.xib in Resources */,
 				F73C1BA42C7F2C7200A5A2C6 /* Inter_28pt-BoldItalic.ttf in Resources */,
+				F7CFB3142C8EBCDD00AFCAA4 /* EditProfileVC.xib in Resources */,
 				F742035A2C8339C700F3481A /* ProfileTableViewCell.xib in Resources */,
 				F73E97F22C8AF9850052E25A /* CountryBottomSheetVC.xib in Resources */,
 				F73C1B932C7F2C7200A5A2C6 /* Inter_28pt-SemiBold.ttf in Resources */,
@@ -862,6 +883,7 @@
 				F73E97E42C8AD9D50052E25A /* ContinuedSignUpVC.swift in Sources */,
 				0D6FB1CD2C8C92D00038DC81 /* paymentTransferVC.swift in Sources */,
 				F74DBA5C2C8A148F0063942A /* UIViewController+EXT.swift in Sources */,
+				F7CFB30D2C8EA9F400AFCAA4 /* SettingVC.swift in Sources */,
 				F71D7FB02C8C5A740087F3DD /* FavoriteListTableViewCell.swift in Sources */,
 				0D43115B2C8E618400F0BE75 /* Notify.swift in Sources */,
 				F72D187B2C8B396800211504 /* OnboardingVC.swift in Sources */,
@@ -876,6 +898,7 @@
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
 				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,
 				0D575F6E2C8BA6FB006ACCB6 /* AmountTransferVC.swift in Sources */,
+				F7CFB3112C8EAA2500AFCAA4 /* SettingTableViewCell.swift in Sources */,
 				F73DF2BD2C8D8D3C0086249A /* ProfileInformationVC.swift in Sources */,
 				F71D7FAC2C8C594B0087F3DD /* FavoriteListVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
@@ -893,6 +916,7 @@
 				F73E97F32C8AF9850052E25A /* CountryBottomSheetVC.swift in Sources */,
 				0DD8099B2C8E52E5001287BD /* TransactionDetailsVC.swift in Sources */,
 				0D81EE082C8C7A9B00BBC33C /* confirmationTransferVC.swift in Sources */,
+				F7CFB3152C8EBCDD00AFCAA4 /* EditProfileVC.swift in Sources */,
 				0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */,
 				0D1083F42C8C66ED005C16CF /* (null) in Sources */,
 				F72D18842C8B4AAE00211504 /* OnboardingSlide.swift in Sources */,

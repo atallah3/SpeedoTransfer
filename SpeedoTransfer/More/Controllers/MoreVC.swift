@@ -59,6 +59,7 @@ class MoreVC: UIViewController {
         let profileVC = ProfileVC(nibName: "ProfileVC", bundle: nil)
         self.navigationController?.pushViewController(profileVC, animated: true)
     }
+    
     private func navigateToSelectedTab(indexPath: IndexPath) {
         switch indexPath.row {
         case 0:

@@ -56,13 +56,17 @@ class ProfileVC: UIViewController {
         self.navigationController?.pushViewController(ProfileVC, animated: true)
     }
 
+    private func goToSettingScreen() {
+        let settingVC = SettingVC(nibName: "SettingVC", bundle: nil)
+        self.navigationController?.pushViewController(settingVC, animated: true)
+    }
     
     private func navigateToSelectedCell(indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
             goToProfileInfoScreen()
         case 1:
-            print("go to Setting")
+            goToSettingScreen()
         case 2:
             print("go to Payment history")
         case 3:
