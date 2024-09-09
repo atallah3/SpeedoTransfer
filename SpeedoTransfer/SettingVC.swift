@@ -39,12 +39,22 @@ class SettingVC: UIViewController {
         ])
     }
     
+    private func goToEditProfileScreen() {
+        let editProfileVC = EditProfileVC(nibName: "EditProfileVC", bundle: nil)
+        self.navigationController?.pushViewController(editProfileVC, animated: true)
+    }
+    
+    private func goToEditPasswordScreen() {
+        let editPassVC = ChangePasswordVC(nibName: "ChangePasswordVC", bundle: nil)
+        self.navigationController?.pushViewController(editPassVC, animated: true)
+    }
+    
     private func navigateToSelectedCell(indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            print("pass")
+            goToEditPasswordScreen()
         case 1:
-            print("profileChaneg")
+            goToEditProfileScreen()
         default:
             print("N/A")
         }

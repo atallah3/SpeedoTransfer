@@ -52,9 +52,10 @@ class ContinuedSignUpVC: UIViewController {
     
     private func openCountryBottomSheet() {
         let countryVC = CountryBottomSheetVC(nibName: "CountryBottomSheetVC", bundle: nil)
+        countryVC.delegate = self
         self.showBottomSheet(viewController: countryVC)
-        countryVC.parentVC = self
     }
+    
     //MARK: - @IBActions
     @IBAction func countryTextFieldTapped(_ sender: UIButton) {
         openCountryBottomSheet()
@@ -70,3 +71,8 @@ class ContinuedSignUpVC: UIViewController {
     }
 }
 
+extension ContinuedSignUpVC: CountrySelectionDelegate {
+    func countryDidSelect(name: String) {
+        selectedCountry = name
+    }
+}

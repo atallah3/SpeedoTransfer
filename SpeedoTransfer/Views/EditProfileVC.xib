@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileVC" customModule="SpeedoTransfer" customModuleProvider="target">
             <connections>
+                <outlet property="countryTF" destination="KcZ-wb-XOF" id="sea-bh-anS"/>
+                <outlet property="dateTF" destination="az4-0D-gPj" id="39b-md-ikP"/>
+                <outlet property="emailTF" destination="jFJ-GF-dUC" id="dY9-XN-48V"/>
+                <outlet property="nameTF" destination="fjQ-JF-bYt" id="eXh-Yz-RFT"/>
                 <outlet property="view" destination="ZsX-Py-AoT" id="hcK-VE-DjI"/>
             </connections>
         </placeholder>
@@ -88,6 +92,9 @@
                                                             <rect key="frame" x="0.0" y="10.999999999999993" width="361" height="50.666666666666664"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                            <connections>
+                                                                <action selector="countryTFTapped:" destination="-1" eventType="touchUpInside" id="Bov-zS-RFN"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -142,6 +149,9 @@
                                                     <real key="value" value="6"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="saveBtnTapped:" destination="-1" eventType="touchUpInside" id="dUJ-ZE-8aj"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>

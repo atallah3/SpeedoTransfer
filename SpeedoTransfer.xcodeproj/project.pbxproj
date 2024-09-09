@@ -137,6 +137,8 @@
 		F7CFB3112C8EAA2500AFCAA4 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB30E2C8EAA2500AFCAA4 /* SettingTableViewCell.swift */; };
 		F7CFB3142C8EBCDD00AFCAA4 /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */; };
 		F7CFB3152C8EBCDD00AFCAA4 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */; };
+		F7CFB3182C8EE9E400AFCAA4 /* ChangePasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7CFB3172C8EE9E400AFCAA4 /* ChangePasswordVC.xib */; };
+		F7CFB3192C8EE9E400AFCAA4 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFB3162C8EE9E400AFCAA4 /* ChangePasswordVC.swift */; };
 		F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */; };
 		F7FAF73F2C7E27E10057B655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF73E2C7E27E10057B655 /* Assets.xcassets */; };
 		F7FAF7422C7E27E10057B655 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7FAF7412C7E27E10057B655 /* Base */; };
@@ -269,6 +271,8 @@
 		F7CFB30F2C8EAA2500AFCAA4 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
+		F7CFB3162C8EE9E400AFCAA4 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		F7CFB3172C8EE9E400AFCAA4 /* ChangePasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordVC.xib; sourceTree = "<group>"; };
 		F7FAF7322C7E27DF0057B655 /* SpeedoTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedoTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7FAF73E2C7E27E10057B655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -582,6 +586,7 @@
 				F73DF2BB2C8D8D3C0086249A /* ProfileInformationVC.swift */,
 				F7CFB30A2C8EA9F400AFCAA4 /* SettingVC.swift */,
 				F7CFB3122C8EBCDD00AFCAA4 /* EditProfileVC.swift */,
+				F7CFB3162C8EE9E400AFCAA4 /* ChangePasswordVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 				F73DF2BC2C8D8D3C0086249A /* ProfileInformationVC.xib */,
 				F7CFB30B2C8EA9F400AFCAA4 /* SettingVC.xib */,
 				F7CFB3132C8EBCDD00AFCAA4 /* EditProfileVC.xib */,
+				F7CFB3172C8EE9E400AFCAA4 /* ChangePasswordVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -614,12 +620,12 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
-		F74DBA4D2C8A01130063942A /* CustomReusableComponents */ = {
+		F74DBA4D2C8A01130063942A /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				F74DBA462C89D5020063942A /* TabBarController */,
 			);
-			path = CustomReusableComponents;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F7FAF7292C7E27DF0057B655 = {
@@ -647,7 +653,7 @@
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
 				F73E9CB82C8C38FA00FE1713 /* More */,
 				0D3BA4202C87ABEB00B1E926 /* Transfer */,
-				F74DBA4D2C8A01130063942A /* CustomReusableComponents */,
+				F74DBA4D2C8A01130063942A /* Components */,
 				F74203512C83335300F3481A /* Profile */,
 				0D39A9912C819AA500C63F69 /* Error */,
 				0D2D08122C80921000CB4167 /* Authentication */,
@@ -799,6 +805,7 @@
 				F73C1BA22C7F2C7200A5A2C6 /* Inter_28pt-Regular.ttf in Resources */,
 				F73C1B8D2C7F2C7200A5A2C6 /* Inter_24pt-SemiBold.ttf in Resources */,
 				F73C1B982C7F2C7200A5A2C6 /* Inter_28pt-ExtraLightItalic.ttf in Resources */,
+				F7CFB3182C8EE9E400AFCAA4 /* ChangePasswordVC.xib in Resources */,
 				F73C1B7A2C7F2C7200A5A2C6 /* Inter_18pt-ExtraLightItalic.ttf in Resources */,
 				F73C1BAB2C7F2C7200A5A2C6 /* Inter_24pt-Thin.ttf in Resources */,
 				F73C1BAC2C7F2C7200A5A2C6 /* Inter_18pt-ExtraLight.ttf in Resources */,
@@ -913,6 +920,7 @@
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */,
 				0D0626DD2C89FDCF00725116 /* HomeTransferVC.swift in Sources */,
+				F7CFB3192C8EE9E400AFCAA4 /* ChangePasswordVC.swift in Sources */,
 				F73E97F32C8AF9850052E25A /* CountryBottomSheetVC.swift in Sources */,
 				0DD8099B2C8E52E5001287BD /* TransactionDetailsVC.swift in Sources */,
 				0D81EE082C8C7A9B00BBC33C /* confirmationTransferVC.swift in Sources */,

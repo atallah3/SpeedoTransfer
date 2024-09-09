@@ -23,17 +23,14 @@ class STTabBarController: UITabBarController {
         transferVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
         let transactionsVC = FirstTransactionVC()
         transactionsVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
-        let cardsVC = UIViewController()
-        cardsVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
         let moreVC = MoreVC()
         
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "home"), tag: 0)
         transferVC.tabBarItem = UITabBarItem(title: "Transfer", image: UIImage(named: "transfer"), tag: 1)
         transactionsVC.tabBarItem = UITabBarItem(title: "Transactions", image: UIImage(named: "transactions"), tag: 2)
-        cardsVC.tabBarItem = UITabBarItem(title: "My cards", image: UIImage(named: "cards"), tag: 3)
-        moreVC.tabBarItem = UITabBarItem(title: "More", image: UIImage(named: "more"), tag: 4)
+        moreVC.tabBarItem = UITabBarItem(title: "More", image: UIImage(named: "more"), tag: 3)
         
-        let controllers = [homeVC, transferVC, transactionsVC, cardsVC, moreVC]
+        let controllers = [homeVC, transferVC, transactionsVC, moreVC]
         self.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
     }
 
