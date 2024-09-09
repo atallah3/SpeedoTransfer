@@ -7,12 +7,16 @@
 
 import UIKit
 
+protocol CountrySelectionDelegate: AnyObject {
+    func countryDidSelect(name: String)
+}
+
 class CountryBottomSheetVC: UIViewController {
     //MARK: - @IBOutlet
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Properties
-    weak var parentVC: UIViewController?
+    weak var delegate: CountrySelectionDelegate?
     var countries: [Country] = []
 
     //MARK: - View life cycle
@@ -54,9 +58,7 @@ extension CountryBottomSheetVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedCountry = countries[indexPath.row].name
-        
-        guard let parent = parentVC as? ContinuedSignUpVC else { return }
-        parent.selectedCountry = selectedCountry
+        delegate?.countryDidSelect(name: selectedCountry)
         self.dismiss(animated: true)
     }
 }

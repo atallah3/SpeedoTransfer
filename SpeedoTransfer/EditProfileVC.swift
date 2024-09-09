@@ -1,25 +1,21 @@
 //
-//  ContinuedSignUpVC.swift
+//  EditProfileVC.swift
 //  SpeedoTransfer
 //
-//  Created by Abd Elrahman Atallah on 06/09/2024.
+//  Created by Abd Elrahman Atallah on 09/09/2024.
 //
 
 import UIKit
 
-class ContinuedSignUpVC: UIViewController {
-    //MARK: - @IBOutlets
+class EditProfileVC: UIViewController {
+    
+    //MARK: - @IBOutlet
+    @IBOutlet weak var nameTF: UITextField!
+    @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var countryTF: UITextField!
-    @IBOutlet weak var dateOfBirthTF: UITextField!
+    @IBOutlet weak var dateTF: UITextField!
     
-    //MARK: - Properties
-    var selectedCountry: String? {
-        didSet {
-            countryTF.text = selectedCountry
-        }
-    }
-    
-    //MARK: - View lif cycle
+    //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -28,26 +24,31 @@ class ContinuedSignUpVC: UIViewController {
     //MARK: - Functions
     private func configureViewController() {
         view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        title = "Edit Profile"
     }
     
-    private func isValidData() -> Bool{
+    private func isValidData() -> Bool {
+        guard nameTF.text?.trimmed != "" else {
+            self.showAlert(title: "Enter your name", message: "You must enter your name to complete registration process", buttonLabel: nil)
+            return false
+        }
+        
+        guard emailTF.text?.trimmed != "" else {
+            self.showAlert(title: "Enter your email", message: "You must enter your Email to complete registration process", buttonLabel: nil)
+            return false
+        }
+        
         guard countryTF.text?.trimmed != "" else {
             self.showAlert(title: "Enter a valid country", message: "Please enter a valid country to complete your registeration", buttonLabel: nil)
             return false
         }
         
-        guard dateOfBirthTF.text?.trimmed != "" else {
+        guard dateTF.text?.trimmed != "" else {
             self.showAlert(title: "Enter a valid date", message: "Please enter a valid date to complete your registeration", buttonLabel: nil)
             return false
         }
         
         return true
-    }
-    
-    private func goToLoginScreen() {
-        let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)
-        navigationController?.pushViewController(loginVC, animated: true)
     }
     
     private func openCountryBottomSheet() {
@@ -57,22 +58,19 @@ class ContinuedSignUpVC: UIViewController {
     }
     
     //MARK: - @IBActions
-    @IBAction func countryTextFieldTapped(_ sender: UIButton) {
-        openCountryBottomSheet()
-    }
-    
-    @IBAction func signUpBtnTapped(_ sender: UIButton) {
+    @IBAction func saveBtnTapped(_ sender: UIButton) {
         guard isValidData() else { return }
-        goToLoginScreen()
+        print("saved in backend")
     }
     
-    @IBAction func signInBtnTapped(_ sender: UIButton) {
-        goToLoginScreen()
+    @IBAction func countryTFTapped(_ sender: Any) {
+        openCountryBottomSheet()
     }
 }
 
-extension ContinuedSignUpVC: CountrySelectionDelegate {
+//MARK: - CountryBottomSheet extension
+extension EditProfileVC: CountrySelectionDelegate {
     func countryDidSelect(name: String) {
-        selectedCountry = name
+        countryTF.text = name
     }
 }
