@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,17 +27,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Recent transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-nA-jw4">
-                    <rect key="frame" x="17.666666666666671" y="287" width="150" height="19.666666666666686"/>
+                    <rect key="frame" x="17.666666666666671" y="213" width="150" height="19.666666666666657"/>
                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                     <color key="textColor" name="g900"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kiE-ku-lYe">
-                    <rect key="frame" x="17.666666666666657" y="322" width="360" height="530"/>
+                    <rect key="frame" x="17.666666666666657" y="248" width="360" height="604"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oy5-Ob-Wc0">
-                    <rect key="frame" x="17.666666666666657" y="149" width="360" height="123"/>
+                    <rect key="frame" x="17.666666666666657" y="75" width="360" height="123"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zb-Ga-43h">
                             <rect key="frame" x="32" y="17" width="122" height="20"/>
@@ -62,7 +67,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icO-PL-Emq">
-                    <rect key="frame" x="307" y="280" width="79.333333333333314" height="34"/>
+                    <rect key="frame" x="307" y="206" width="79.333333333333314" height="34"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="View all">
                         <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
@@ -81,12 +86,12 @@
                 <constraint firstItem="icO-PL-Emq" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="8" id="LlW-CS-rZ0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oy5-Ob-Wc0" secondAttribute="trailing" priority="750" constant="15.333333333333314" id="TIN-Yv-4Pv"/>
                 <constraint firstItem="oy5-Ob-Wc0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.144366" id="Und-EX-pao"/>
-                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="asj-WR-eeE"/>
+                <constraint firstItem="oy5-Ob-Wc0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="asj-WR-eeE"/>
                 <constraint firstItem="kiE-ku-lYe" firstAttribute="trailing" secondItem="oy5-Ob-Wc0" secondAttribute="trailing" constant="-5.6843418860808015e-14" id="g58-8T-vq8"/>
                 <constraint firstItem="oy5-Ob-Wc0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17.666666666666664" id="iQp-A4-wXt"/>
                 <constraint firstItem="AeW-nA-jw4" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="15" id="jIj-sg-qeK"/>
                 <constraint firstItem="kiE-ku-lYe" firstAttribute="top" secondItem="oy5-Ob-Wc0" secondAttribute="bottom" constant="50" id="pR3-uX-bBp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kiE-ku-lYe" secondAttribute="bottom" constant="-34" id="uzg-9M-bWT"/>
+                <constraint firstAttribute="bottom" secondItem="kiE-ku-lYe" secondAttribute="bottom" id="uzg-9M-bWT"/>
             </constraints>
             <point key="canvasLocation" x="-156.4885496183206" y="-27.464788732394368"/>
         </view>
