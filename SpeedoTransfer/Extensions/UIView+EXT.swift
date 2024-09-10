@@ -39,7 +39,6 @@ extension UIView {
         view.layer.shadowOpacity = 0.2
         view.layer.shadowOffset = CGSize(width: 1, height: 1)
         view.layer.shadowRadius = 3
-//        view.clipsToBounds = false
         view.layer.masksToBounds = false
     }
 }
