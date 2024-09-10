@@ -8,22 +8,44 @@
 import UIKit
 
 class AmountTransferVC: UIViewController {
-
+    
+    @IBOutlet weak var favoriteView: UIStackView!
+    @IBOutlet weak var AmountTextField: UITextField!
+    
+    @IBOutlet weak var receiverName: UITextField!
+    @IBOutlet weak var receiverAccountNumber: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureViewController()
+        configureFavoriteTap()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func configureViewController() {
+        view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
+        title = "Transfer"
     }
-    */
-
+    
+    private func configureFavoriteTap() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        favoriteView.addGestureRecognizer(tapGesture)
+    }
+    
+    private func goToFavoriteListVC() {
+        let favoriteVC = FavoriteListVC(nibName: "FavoriteListVC", bundle: nil)
+        self.showBottomSheet(viewController: favoriteVC)
+    }
+    
+    private func goToConfirmationScreen() {
+        let confirmationVC = confirmationTransferVC(nibName: "confirmationTransferVC", bundle: nil)
+        confirmationVC.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(confirmationVC, animated: true)
+    }
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        goToFavoriteListVC()
+    }
+    
+    @IBAction func continueBtnTapped(_ sender: UIButton) {
+        print("btn tapped")
+        goToConfirmationScreen()
+    }
 }

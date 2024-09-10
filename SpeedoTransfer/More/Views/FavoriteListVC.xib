@@ -42,7 +42,7 @@
                 <constraint firstItem="lKK-yf-vlO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="e1d-cm-dxO"/>
                 <constraint firstItem="lKK-yf-vlO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="h0C-5n-ev3"/>
             </constraints>
-            <point key="canvasLocation" x="-39" y="20"/>
+            <point key="canvasLocation" x="-40.458015267175568" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

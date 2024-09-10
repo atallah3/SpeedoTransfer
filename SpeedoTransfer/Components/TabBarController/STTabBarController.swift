@@ -19,7 +19,7 @@ class STTabBarController: UITabBarController {
     func setupViewControllers() {
         let homeVC = HomeTransferVC()
         homeVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
-        let transferVC = NotificationVC()
+        let transferVC = AmountTransferVC()
         transferVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)
         let transactionsVC = FirstTransactionVC()
         transactionsVC.view.addGradientBackgroundColor(colors: UIColor.SecondGradientolors)

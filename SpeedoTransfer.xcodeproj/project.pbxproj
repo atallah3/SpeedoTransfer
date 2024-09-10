@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626CC2C89DA1600725116 /* BottomSheet.swift */; };
 		0D0626D52C89E58300725116 /* TransactionsTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */; };
 		0D0626D62C89E58300725116 /* TransactionsTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */; };
 		0D0626DD2C89FDCF00725116 /* HomeTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */; };
@@ -145,7 +144,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D0626CC2C89DA1600725116 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableTableViewCell.swift; sourceTree = "<group>"; };
 		0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsTableTableViewCell.xib; sourceTree = "<group>"; };
 		0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferVC.swift; sourceTree = "<group>"; };
@@ -294,11 +292,9 @@
 		0D0626D22C89E54600725116 /* Contollers */ = {
 			isa = PBXGroup;
 			children = (
-				0D0626CC2C89DA1600725116 /* BottomSheet.swift */,
-				0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */,
-				0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */,
-				0D81EE062C8C7A9B00BBC33C /* confirmationTransferVC.swift */,
 				0D575F6C2C8BA6FB006ACCB6 /* AmountTransferVC.swift */,
+				0D81EE062C8C7A9B00BBC33C /* confirmationTransferVC.swift */,
+				0D6FB1CB2C8C92D00038DC81 /* paymentTransferVC.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -348,11 +344,8 @@
 		0D3BA42C2C87B2AB00B1E926 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */,
-				0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */,
 				0D575F6D2C8BA6FB006ACCB6 /* AmountTransferVC.xib */,
 				0D81EE072C8C7A9B00BBC33C /* confirmationTransferVC.xib */,
-				0D6FB1CB2C8C92D00038DC81 /* paymentTransferVC.swift */,
 				0D6FB1CC2C8C92D00038DC81 /* paymentTransferVC.xib */,
 			);
 			path = View;
@@ -451,6 +444,17 @@
 				F72D187F2C8B448A00211504 /* OnboardingCollectionViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F72EE99E2C909B5700FEA1C7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */,
+				0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */,
+				0D0626D32C89E58300725116 /* TransactionsTableTableViewCell.swift */,
+				0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F73C1B3E2C7F2B8500A5A2C6 /* Support */ = {
@@ -648,9 +652,10 @@
 			isa = PBXGroup;
 			children = (
 				0D4311532C8E60BC00F0BE75 /* Notifications */,
-				0D6FB1CF2C8CF9E70038DC81 /* Transactions */,
 				F7FAF7432C7E27E10057B655 /* Info.plist */,
 				F7FAF7352C7E27DF0057B655 /* AppDelegate.swift */,
+				F72EE99E2C909B5700FEA1C7 /* Home */,
+				0D6FB1CF2C8CF9E70038DC81 /* Transactions */,
 				F73E9CB82C8C38FA00FE1713 /* More */,
 				0D3BA4202C87ABEB00B1E926 /* Transfer */,
 				F74DBA4D2C8A01130063942A /* Components */,
@@ -903,7 +908,6 @@
 				0DD809972C8E4226001287BD /* FirstTransactionVC.swift in Sources */,
 				F7411D922C8173D0009DAB14 /* UIView+EXT.swift in Sources */,
 				F7FAF7362C7E27DF0057B655 /* AppDelegate.swift in Sources */,
-				0D0626CD2C89DA1600725116 /* BottomSheet.swift in Sources */,
 				0D575F6E2C8BA6FB006ACCB6 /* AmountTransferVC.swift in Sources */,
 				F7CFB3112C8EAA2500AFCAA4 /* SettingTableViewCell.swift in Sources */,
 				F73DF2BD2C8D8D3C0086249A /* ProfileInformationVC.swift in Sources */,
