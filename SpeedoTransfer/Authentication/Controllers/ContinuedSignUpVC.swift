@@ -89,6 +89,7 @@ class ContinuedSignUpVC: UIViewController {
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
         registerUser()
+        print("login")
 //        goToLoginScreen()
     }
     

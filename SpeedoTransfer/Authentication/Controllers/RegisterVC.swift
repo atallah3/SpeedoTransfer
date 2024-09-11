@@ -22,15 +22,71 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureRegisterVC()
+    //MARK: - handle images on textFields
+        let userIcon = UIImage(named: "user")
+        addrightimage(txtField: nameTF, andimage: userIcon!)
+        
+        let emailIcon = UIImage(named: "email")
+        addrightimage(txtField: emailTF, andimage: emailIcon!)
+        
+        let closedEyeIcon = UIImage(named: "closedEye")
+        let openEyeIcon = UIImage(named: "openedEye")
+        addEyeIcon(txtFields: [passwordTF, confirmedPasswordTF], initialImage: closedEyeIcon!, toggleImage: openEyeIcon!)
+//
+//        let passIcon = UIImage(named: "closedEye")
+//        addrightimage(txtField: passwordTF, andimage: passIcon!)
+//        addrightimage(txtField: confirmedPasswordTF, andimage: passIcon!)
     }
-    
+
     //MARK: - Functions
+
+    func addrightimage(txtField: UITextField, andimage img: UIImage) {
+        let padding: CGFloat = 16
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 24 + padding, height: 24))
+        let rightImageView = UIImageView(frame: CGRect(x: 0, y: 0.0, width: 24, height: 24))
+        rightImageView.image = img
+        containerView.addSubview(rightImageView)
+        txtField.rightView = containerView
+        txtField.rightViewMode = .always
+    }
+    func addEyeIcon(txtFields: [UITextField], initialImage: UIImage, toggleImage: UIImage) {
+        let padding: CGFloat = 16
+
+        for txtField in txtFields {
+            let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 24 + padding, height: 24))
+            let eyeImageView = UIImageView(frame: CGRect(x: 0, y: 0.0, width: 24, height: 24))
+            eyeImageView.image = initialImage
+            eyeImageView.isUserInteractionEnabled = true
+
+            containerView.addSubview(eyeImageView)
+            txtField.rightView = containerView
+            txtField.rightViewMode = .always
+
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(togglePasswordVisibility(_:)))
+            eyeImageView.addGestureRecognizer(tapGesture)
+            eyeImageView.tag = txtField.hash
+        }
+    }
+
+    @objc func togglePasswordVisibility(_ sender: UITapGestureRecognizer) {
+        guard let eyeImageView = sender.view as? UIImageView else { return }
+        if let textField = [passwordTF, confirmedPasswordTF].first(where: { $0.hash == eyeImageView.tag }) {
+            if textField.isSecureTextEntry {
+                textField.isSecureTextEntry = false
+                eyeImageView.image = UIImage(named: "openedEye")
+            } else {
+                textField.isSecureTextEntry = true
+                eyeImageView.image = UIImage(named: "closedEye")
+            }
+        }
+    }
+
     private func configureRegisterVC() {
         myView.addGradientBackgroundColor(colors: UIColor.FirstGradientolors)
         title = "Sign up"
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
+
     private func isValidData() -> Bool {
         guard nameTF.text?.trimmed != "" else {
             self.showAlert(title: "Enter your name", message: "You must enter your name to complete registration process", buttonLabel: nil)

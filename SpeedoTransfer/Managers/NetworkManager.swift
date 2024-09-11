@@ -49,7 +49,7 @@ class NetworkManager {
             }
         }
     }
-    
+    //reposity pattern 
     
     func loginWith(email: String, password: String,completion: @escaping (Result<LoggedInUser,NetworkingError>)->Void) {
         
