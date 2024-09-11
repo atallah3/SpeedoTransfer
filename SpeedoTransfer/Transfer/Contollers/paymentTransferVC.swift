@@ -21,4 +21,11 @@ class paymentTransferVC: UIViewController {
         title = "Transfer"
     }
 
+    @IBAction func backToHomeBtn(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
+        }
+
+    
+    @IBAction func AddToFavBtn(_ sender: UIButton) {
+    }
 }

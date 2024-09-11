@@ -29,12 +29,11 @@ class confirmationTransferVC: UIViewController {
         let paymentVC = paymentTransferVC(nibName: "paymentTransferVC", bundle: nil)
         self.navigationController?.pushViewController(paymentVC, animated: true)
     }
- 
     @IBAction func confirmBtnTapped(_ sender: UIButton) {
         goToPaymentScreen()
     }
     
     @IBAction func prevBtnTapped(_ sender: UIButton) {
-        
+        self.navigationController?.popViewController(animated: true)
     }
 }
