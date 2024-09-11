@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-       let rootViewController = STTabBarController()
-        let navVC = UINavigationController(rootViewController: STTabBarController())
+       let rootViewController = LoginVC()
+        let navVC = UINavigationController(rootViewController: LoginVC() )
         window?.rootViewController = navVC
         
         window?.makeKeyAndVisible()

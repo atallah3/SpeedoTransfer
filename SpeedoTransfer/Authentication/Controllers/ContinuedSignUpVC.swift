@@ -47,7 +47,11 @@ class ContinuedSignUpVC: UIViewController {
             switch result {
             case .success(let user):
                 self.user = user
-                print("  uer : \(user)")
+                print("User: \(user)")
+                
+                DispatchQueue.main.async {
+                    self.goToLoginScreen()
+                }
             case .failure(let failure):
                 print(failure)
             }
@@ -93,7 +97,7 @@ class ContinuedSignUpVC: UIViewController {
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
         registerUser()
         print("login")
-//        goToLoginScreen()
+        goToLoginScreen()
     }
     
     @IBAction func signInBtnTapped(_ sender: UIButton) {

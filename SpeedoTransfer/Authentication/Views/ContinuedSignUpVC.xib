@@ -123,7 +123,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="signUpBtnTapped:" destination="-1" eventType="touchUpInside" id="Ojj-zq-xiR"/>
+                                <action selector="signUpBtnTapped:" destination="-1" eventType="touchUpInside" id="bTE-ll-bZB"/>
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zDP-NS-xen">

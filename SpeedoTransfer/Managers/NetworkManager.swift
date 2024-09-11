@@ -49,17 +49,17 @@ class NetworkManager {
             }
         }
     }
-    //reposity pattern 
+    //reposity pattern
     
     func loginWith(email: String, password: String,completion: @escaping (Result<LoggedInUser,NetworkingError>)->Void) {
         
         AF.request("https://sha256-1f39a1226a97.onrender.com/api/v1/auth/login",method: .post,
                    parameters: ["email": email, "password":password], encoding: JSONEncoding.default).response { response in
             
-            guard let _ = response.error else {
-                completion(.failure(.invalidResponseFromServer))
-                return
-            }
+//            guard let _ = response.error else {
+//                completion(.failure(.invalidResponseFromServer))
+//                return
+//            }
             
             guard let data = response.data else {
                 completion(.failure(.invalidData))
