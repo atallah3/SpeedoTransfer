@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,39 +24,39 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="q5p-Cy-nF9">
-                        <rect key="frame" x="10" y="10" width="57" height="54"/>
+                        <rect key="frame" x="10" y="10" width="57" height="55"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdullah Silva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6O-Hv-wRg">
-                        <rect key="frame" x="88" y="10" width="146" height="27"/>
+                        <rect key="frame" x="88" y="9.9999999999999982" width="146" height="27.333333333333329"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa . Mater Card . 1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhZ-Qq-AlB">
-                        <rect key="frame" x="88" y="45" width="137" height="15"/>
+                        <rect key="frame" x="88" y="45.333333333333336" width="137" height="14"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                         <color key="textColor" name="g700"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today 11:00 - Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukJ-Vi-0Hg">
-                        <rect key="frame" x="88" y="72" width="146" height="15"/>
+                        <rect key="frame" x="88" y="71.333333333333329" width="146" height="14"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                         <color key="textColor" name="g100"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="$1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-dz-o1W">
-                        <rect key="frame" x="88" y="93" width="127" height="17"/>
+                        <rect key="frame" x="88" y="91.333333333333329" width="127" height="21"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="16"/>
                         <color key="textColor" name="p300"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbg-be-ppG">
-                        <rect key="frame" x="369.66666666666669" y="10" width="26" height="39"/>
+                        <rect key="frame" x="369.66666666666669" y="10" width="26" height="41"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="Chevron"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUE-XG-neZ">
-                        <rect key="frame" x="259" y="63" width="73" height="24"/>
+                        <rect key="frame" x="259" y="65" width="73" height="24.333333333333329"/>
                         <color key="backgroundColor" red="0.28510426591863069" green="1" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="10"/>
                         <color key="textColor" red="0.066666666666666666" green="0.54117647058823526" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,6 +99,11 @@
                     <constraint firstItem="iUE-XG-neZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.18883" constant="8.0425531914893611" id="xwF-gu-bbN"/>
                     <constraint firstItem="qhZ-Qq-AlB" firstAttribute="top" secondItem="j6O-Hv-wRg" secondAttribute="bottom" constant="8" symbolic="YES" id="yog-Mu-SNB"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <point key="canvasLocation" x="360" y="207"/>
