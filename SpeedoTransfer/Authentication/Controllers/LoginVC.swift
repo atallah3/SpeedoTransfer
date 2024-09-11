@@ -26,6 +26,19 @@ class LoginVC: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    private func loginUser() {
+        
+        NetworkManager.shared.loginWith(email: emailTF.text!, password: passwordTF.text!) { result in
+            switch result {
+            case .success(let success):
+                print(success)
+                self.goToTabBarViewController()
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+    }
+    
     private func isValidDate() -> Bool {
         guard emailTF?.text?.trimmed != "" else {
             self.showAlert(title: "Incorrect email, Please try again", message: "if you don`t have an account please sign up", buttonLabel: nil)
@@ -54,7 +67,8 @@ class LoginVC: UIViewController {
     //MARK: - @IBActions
     @IBAction func signInBtnTapped(_ sender: UIButton) {
         guard isValidDate() else { return }
-        goToTabBarViewController()
+        loginUser()
+        print("btnatapped")
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {

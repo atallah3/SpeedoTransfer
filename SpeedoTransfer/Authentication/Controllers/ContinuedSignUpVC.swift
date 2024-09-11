@@ -13,6 +13,10 @@ class ContinuedSignUpVC: UIViewController {
     @IBOutlet weak var dateOfBirthTF: UITextField!
     
     //MARK: - Properties
+    var name: String?
+    var email: String?
+    var password: String?
+    var user: User?
     var selectedCountry: String? {
         didSet {
             countryTF.text = selectedCountry
@@ -31,6 +35,23 @@ class ContinuedSignUpVC: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    private func registerUser() {
+        guard isValidData() else { return }
+        
+        NetworkManager.shared.registerUser(name: name!, country: selectedCountry!, eamil: email!, password: password!, dateOfBirth: dateOfBirthTF.text!) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let success):
+                self.user = user
+                print("  uer : \(self.user)")
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+    }
+    
+    
     private func isValidData() -> Bool{
         guard countryTF.text?.trimmed != "" else {
             self.showAlert(title: "Enter a valid country", message: "Please enter a valid country to complete your registeration", buttonLabel: nil)
@@ -41,6 +62,11 @@ class ContinuedSignUpVC: UIViewController {
             self.showAlert(title: "Enter a valid date", message: "Please enter a valid date to complete your registeration", buttonLabel: nil)
             return false
         }
+        
+//        guard let name = name, let email = email, let password = password else {
+//            self.showAlert(title: "Error in registeration Proccess", message: "Please try again later", buttonLabel: nil)
+//            return false
+//        }
         
         return true
     }
@@ -62,8 +88,8 @@ class ContinuedSignUpVC: UIViewController {
     }
     
     @IBAction func signUpBtnTapped(_ sender: UIButton) {
-        guard isValidData() else { return }
-        goToLoginScreen()
+        registerUser()
+//        goToLoginScreen()
     }
     
     @IBAction func signInBtnTapped(_ sender: UIButton) {

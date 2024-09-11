@@ -16,7 +16,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var confirmedPasswordTF: UITextField!
     
     //MARK: - Properties
-    
+    var user: User?
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,9 @@ class RegisterVC: UIViewController {
     
     private func goToContinuedSignUpScreen() {
         let signUp = ContinuedSignUpVC(nibName: "ContinuedSignUpVC", bundle: nil)
+        signUp.name = nameTF.text
+        signUp.email = emailTF.text
+        signUp.password = passwordTF.text
         navigationController?.pushViewController(signUp, animated: true)
     }
     
