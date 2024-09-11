@@ -1,3 +1,4 @@
+
 //
 //  HOmeTransferVC.swift
 //  SpeedoTransfer
@@ -29,4 +30,6 @@ class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 77
     }
 
+    @IBAction func ViewAllBtn(_ sender: UIButton) {
+    }
 }
