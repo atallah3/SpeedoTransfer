@@ -42,9 +42,9 @@ class ContinuedSignUpVC: UIViewController {
             guard let self = self else { return }
             
             switch result {
-            case .success(let success):
+            case .success(let user):
                 self.user = user
-                print("  uer : \(self.user)")
+                print("  uer : \(user)")
             case .failure(let failure):
                 print(failure)
             }
@@ -63,10 +63,10 @@ class ContinuedSignUpVC: UIViewController {
             return false
         }
         
-//        guard let name = name, let email = email, let password = password else {
-//            self.showAlert(title: "Error in registeration Proccess", message: "Please try again later", buttonLabel: nil)
-//            return false
-//        }
+        guard let name = name, let email = email, let password = password else {
+            self.showAlert(title: "Error in registeration Proccess", message: "Please try again later", buttonLabel: nil)
+            return false
+        }
         
         return true
     }

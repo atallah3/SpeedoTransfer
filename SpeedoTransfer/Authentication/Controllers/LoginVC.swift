@@ -27,6 +27,7 @@ class LoginVC: UIViewController {
     }
     
     private func loginUser() {
+        guard isValidDate() else { return }
         
         NetworkManager.shared.loginWith(email: emailTF.text!, password: passwordTF.text!) { result in
             switch result {

@@ -8,6 +8,12 @@
 import Foundation
 import Alamofire
 
+
+enum NetworkingError: Error {
+    case invalidResponseFromServer
+    case invalidData
+}
+
 class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
@@ -45,7 +51,7 @@ class NetworkManager {
     }
     
     
-    func loginWith(email: String, password: String,completion: @escaping (Result<test,NetworkingError>)->Void) {
+    func loginWith(email: String, password: String,completion: @escaping (Result<LoggedInUser,NetworkingError>)->Void) {
         
         AF.request("https://sha256-1f39a1226a97.onrender.com/api/v1/auth/login",method: .post,
                    parameters: ["email": email, "password":password], encoding: JSONEncoding.default).response { response in
@@ -62,7 +68,7 @@ class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let user = try decoder.decode(test.self, from: data)
+                let user = try decoder.decode(LoggedInUser.self, from: data)
                 print(user.token)
                 completion(.success(user))
             } catch {
@@ -71,16 +77,8 @@ class NetworkManager {
         }
         
     }
-    
-    
 }
 
-enum NetworkingError: Error {
-    case invalidResponseFromServer
-    case invalidData
-}
 
-struct test : Codable{
-    let id: Int
-    let token: String
-}
+
+

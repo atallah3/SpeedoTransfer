@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct User: Decodable{
+struct User: Decodable {
     var id: Int
     var name: String
     var email: String
+}
+
+struct LoggedInUser : Codable {
+    let id: Int
+    let token: String
 }

@@ -17,6 +17,7 @@ class RegisterVC: UIViewController {
     
     //MARK: - Properties
     var user: User?
+    
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
