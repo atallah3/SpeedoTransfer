@@ -27,6 +27,9 @@ class ContinuedSignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
+        
+        let dateIcon = UIImage(named: "date")
+        addrightimage(txtField: dateOfBirthTF, andimage: dateIcon!)
     }
     
     //MARK: - Functions

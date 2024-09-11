@@ -32,23 +32,9 @@ class RegisterVC: UIViewController {
         let closedEyeIcon = UIImage(named: "closedEye")
         let openEyeIcon = UIImage(named: "openedEye")
         addEyeIcon(txtFields: [passwordTF, confirmedPasswordTF], initialImage: closedEyeIcon!, toggleImage: openEyeIcon!)
-//
-//        let passIcon = UIImage(named: "closedEye")
-//        addrightimage(txtField: passwordTF, andimage: passIcon!)
-//        addrightimage(txtField: confirmedPasswordTF, andimage: passIcon!)
     }
 
     //MARK: - Functions
-
-    func addrightimage(txtField: UITextField, andimage img: UIImage) {
-        let padding: CGFloat = 16
-        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 24 + padding, height: 24))
-        let rightImageView = UIImageView(frame: CGRect(x: 0, y: 0.0, width: 24, height: 24))
-        rightImageView.image = img
-        containerView.addSubview(rightImageView)
-        txtField.rightView = containerView
-        txtField.rightViewMode = .always
-    }
     func addEyeIcon(txtFields: [UITextField], initialImage: UIImage, toggleImage: UIImage) {
         let padding: CGFloat = 16
 
