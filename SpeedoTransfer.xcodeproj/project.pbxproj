@@ -16,7 +16,7 @@
 		0D1083F42C8C66ED005C16CF /* (null) in Sources */ = {isa = PBXBuildFile; };
 		0D1083F52C8C66ED005C16CF /* (null) in Resources */ = {isa = PBXBuildFile; };
 		0D2E6A6C2C91D01700741104 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2E6A6B2C91D01700741104 /* Alamofire */; };
-		0D2E6A6E2C92224700741104 /* TextFieldImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E6A6D2C92224600741104 /* TextFieldImage.swift */; };
+		0D2E6A6E2C92224700741104 /* UIImage + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E6A6D2C92224600741104 /* UIImage + EXT.swift */; };
 		0D4311572C8E60F200F0BE75 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4311552C8E60F200F0BE75 /* NotificationVC.swift */; };
 		0D4311582C8E60F200F0BE75 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4311562C8E60F200F0BE75 /* NotificationVC.xib */; };
 		0D43115B2C8E618400F0BE75 /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4311592C8E618400F0BE75 /* Notify.swift */; };
@@ -152,7 +152,7 @@
 		0D0626D42C89E58300725116 /* TransactionsTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsTableTableViewCell.xib; sourceTree = "<group>"; };
 		0D0626DB2C89FDCF00725116 /* HomeTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTransferVC.swift; sourceTree = "<group>"; };
 		0D0626DC2C89FDCF00725116 /* HomeTransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTransferVC.xib; sourceTree = "<group>"; };
-		0D2E6A6D2C92224600741104 /* TextFieldImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldImage.swift; sourceTree = "<group>"; };
+		0D2E6A6D2C92224600741104 /* UIImage + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + EXT.swift"; sourceTree = "<group>"; };
 		0D4311552C8E60F200F0BE75 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		0D4311562C8E60F200F0BE75 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		0D4311592C8E618400F0BE75 /* Notify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
@@ -501,7 +501,7 @@
 			children = (
 				F74AAB242C81E83200C63A87 /* User.swift */,
 				F72D18852C8B4F8500211504 /* Country.swift */,
-				0D2E6A6D2C92224600741104 /* TextFieldImage.swift */,
+				0D2E6A6D2C92224600741104 /* UIImage + EXT.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -942,7 +942,7 @@
 				F73DF2BD2C8D8D3C0086249A /* ProfileInformationVC.swift in Sources */,
 				F71D7FAC2C8C594B0087F3DD /* FavoriteListVC.swift in Sources */,
 				F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */,
-				0D2E6A6E2C92224700741104 /* TextFieldImage.swift in Sources */,
+				0D2E6A6E2C92224700741104 /* UIImage + EXT.swift in Sources */,
 				F74DBA482C89D5570063942A /* STTabBarController.swift in Sources */,
 				F7C1A6152C8C6E3A00EC5468 /* DummyData.swift in Sources */,
 				F74AAB252C81E83200C63A87 /* User.swift in Sources */,

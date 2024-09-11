@@ -16,6 +16,12 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureRegisterVC()
+        let emailIcon = UIImage(named: "email")
+        let closedEyeIcon = UIImage(named: "closedEye")
+        let openedEyeIcon = UIImage(named: "openedEye")
+        
+        addrightimage(txtField: emailTF, andimage: emailIcon!)
+        UITextField.addEyeIcon(to: [passwordTF], initialImage: closedEyeIcon!, toggleImage: openedEyeIcon!)
     }
     
     //MARK: - Functions
