@@ -29,6 +29,7 @@ class FirstTransactionVC: UIViewController,UITableViewDelegate, UITableViewDataS
         lastTrasnactionsTable.delegate = self
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 25
     }

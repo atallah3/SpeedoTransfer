@@ -12,16 +12,14 @@ class LoginVC: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
+    //MARK: - Properties
+    var user: LoggedInUser?
+    
     //MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureRegisterVC()
-        let emailIcon = UIImage(named: "email")
-        let closedEyeIcon = UIImage(named: "closedEye")
-        let openedEyeIcon = UIImage(named: "openedEye")
-        
-        addrightimage(txtField: emailTF, andimage: emailIcon!)
-        UITextField.addEyeIcon(to: [passwordTF], initialImage: closedEyeIcon!, toggleImage: openedEyeIcon!)
+        showRightImageIcon()
     }
     
     //MARK: - Functions
@@ -32,22 +30,33 @@ class LoginVC: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
+    private func showRightImageIcon() {
+        let emailIcon = UIImage(named: "email")
+        let closedEyeIcon = UIImage(named: "closedEye")
+        let openedEyeIcon = UIImage(named: "openedEye")
+        
+        addrightimage(txtField: emailTF, andimage: emailIcon!)
+        UITextField.addEyeIcon(to: [passwordTF], initialImage: closedEyeIcon!, toggleImage: openedEyeIcon!)
+    }
+    
     private func loginUser() {
         guard isValidDate() else { return }
         
         NetworkManager.shared.loginWith(email: emailTF.text!, password: passwordTF.text!) { result in
             switch result {
-            case .success(let success):
-                print(success)
-                print("success")
+            case .success(let user):
+                self.user = user
+                self.saveUserData(user: user)
                 self.goToTabBarViewController()
             case .failure(let failure):
-                print("failed")
-                print(failure)
+                self.showAlert(title: "Please Try Again", message: "", buttonLabel: nil)
             }
         }
     }
     
+    private func saveUserData(user: LoggedInUser) {
+        UserDefaultsManager.shared.saveUserData(user: user)
+    }
     private func isValidDate() -> Bool {
         guard emailTF?.text?.trimmed != "" else {
             self.showAlert(title: "Incorrect email, Please try again", message: "if you don`t have an account please sign up", buttonLabel: nil)

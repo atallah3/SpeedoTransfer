@@ -9,7 +9,11 @@
 import UIKit
 
 class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     @IBOutlet weak var RecentTransactionsTable: UITableView!
+    
+    @IBOutlet weak var currentBalance: UILabel!
+    var user: LoggedInUser?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,21 @@ class HomeTransferVC: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         RecentTransactionsTable.dataSource = self
         RecentTransactionsTable.delegate = self
+        getUserData()
+    }
+    
+    func getUserData() {
+        user = UserDefaultsManager.shared.getUserData()
+        NetworkManager.shared.getUserBalance(id: 9, token: user?.token) { [weak self] balance, error in
+            guard let self = self else { return }
+            if let error = error {
+                 print(error)
+            }
+            guard let balance else { return }
+            DispatchQueue.main.async {
+                self.currentBalance.text = "\(balance.balance) EGP"
+            }
+        }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 25

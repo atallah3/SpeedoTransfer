@@ -129,6 +129,7 @@
 		F742035D2C833FCF00F3481A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F742035C2C833FCF00F3481A /* ProfileCell.swift */; };
 		F74AAB232C81E7CD00C63A87 /* String+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AAB222C81E7CD00C63A87 /* String+EXT.swift */; };
 		F74AAB252C81E83200C63A87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AAB242C81E83200C63A87 /* User.swift */; };
+		F74AC25C2C92C40F00A31245 /* RecieverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AC25B2C92C40F00A31245 /* RecieverData.swift */; };
 		F74DBA482C89D5570063942A /* STTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA472C89D5570063942A /* STTabBarController.swift */; };
 		F74DBA4A2C89DDD40063942A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA492C89DDD40063942A /* RegisterVC.swift */; };
 		F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBA4B2C89FB0A0063942A /* LoginVC.swift */; };
@@ -269,6 +270,7 @@
 		F742035C2C833FCF00F3481A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F74AAB222C81E7CD00C63A87 /* String+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EXT.swift"; sourceTree = "<group>"; };
 		F74AAB242C81E83200C63A87 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F74AC25B2C92C40F00A31245 /* RecieverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieverData.swift; sourceTree = "<group>"; };
 		F74DBA472C89D5570063942A /* STTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTabBarController.swift; sourceTree = "<group>"; };
 		F74DBA492C89DDD40063942A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		F74DBA4B2C89FB0A0063942A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 		0D3BA4202C87ABEB00B1E926 /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				F74AC25A2C92C3F500A31245 /* Models */,
 				0D0626D22C89E54600725116 /* Contollers */,
 				0D3BA42C2C87B2AB00B1E926 /* View */,
 			);
@@ -513,7 +516,6 @@
 			children = (
 				F74AAB242C81E83200C63A87 /* User.swift */,
 				F72D18852C8B4F8500211504 /* Country.swift */,
-				0D2E6A6D2C92224600741104 /* UIImage + EXT.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -585,6 +587,7 @@
 		F7411D8E2C8169D2009DAB14 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0D2E6A6D2C92224600741104 /* UIImage + EXT.swift */,
 				F7411D912C8173D0009DAB14 /* UIView+EXT.swift */,
 				F74AAB222C81E7CD00C63A87 /* String+EXT.swift */,
 				F7411D932C8173FE009DAB14 /* UIColor+EXT.swift */,
@@ -633,6 +636,14 @@
 			children = (
 				F742035C2C833FCF00F3481A /* ProfileCell.swift */,
 				F73DF2C62C8D92610086249A /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F74AC25A2C92C3F500A31245 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F74AC25B2C92C40F00A31245 /* RecieverData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -966,6 +977,7 @@
 				F72D18802C8B448A00211504 /* OnboardingCollectionViewCell.swift in Sources */,
 				F73E97F72C8AFA270052E25A /* CountryTableViewCell.swift in Sources */,
 				F74DBA4A2C89DDD40063942A /* RegisterVC.swift in Sources */,
+				F74AC25C2C92C40F00A31245 /* RecieverData.swift in Sources */,
 				F7411D942C8173FE009DAB14 /* UIColor+EXT.swift in Sources */,
 				0DFBB7882C92A508009BA765 /* 404ErrorVC.swift in Sources */,
 				F74DBA4C2C89FB0A0063942A /* LoginVC.swift in Sources */,
