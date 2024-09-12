@@ -54,14 +54,23 @@ class RegisterVC: UIViewController {
         }
         
         guard let password = passwordTF.text?.trimmed,
+              validatePassword(password),
               confirmedPasswordTF.text?.trimmed == password
         else {
-            self.showAlert(title: "Enter your password", message: "You must enter your password to complete registration process", buttonLabel: nil)
+            self.showAlert(title: "Invalid Password", message: "Your password must be at least 6 characters long and include a capital letter, a lowercase letter, a number, and a special character.", buttonLabel: nil)
             return false
         }
-        
+
         return true
     }
+    
+    func validatePassword(_ password: String) -> Bool {
+        let passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}$"
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
+        
+        return passwordTest.evaluate(with: password)
+    }
+
     
     private func goToLoginScreen() {
         let loginVC = LoginVC(nibName: "LoginVC", bundle: nil)

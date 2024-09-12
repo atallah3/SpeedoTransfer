@@ -60,6 +60,10 @@ class ProfileVC: UIViewController {
         let settingVC = SettingVC(nibName: "SettingVC", bundle: nil)
         self.navigationController?.pushViewController(settingVC, animated: true)
     }
+    private func goToPayment() {
+        let payment = paymentTransferVC(nibName: "paymentTransferVC", bundle: nil)
+        self.navigationController?.pushViewController(payment, animated: true)
+    }
     
     private func navigateToSelectedCell(indexPath: IndexPath) {
         switch indexPath.row {
@@ -68,7 +72,7 @@ class ProfileVC: UIViewController {
         case 1:
             goToSettingScreen()
         case 2:
-            print("go to Payment history")
+            goToPayment()
         case 3:
             goToFavoriteScreen()
         default:
