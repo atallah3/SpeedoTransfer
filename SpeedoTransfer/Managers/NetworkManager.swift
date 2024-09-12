@@ -8,7 +8,6 @@
 import Foundation
 import Alamofire
 
-
 enum NetworkingError: Error {
     case invalidResponseFromServer
     case invalidData
@@ -19,15 +18,13 @@ class NetworkManager {
     private init() {}
     
     func registerUser(name: String, country: String, eamil: String, password: String, dateOfBirth: String,completion: @escaping (Result<User,NetworkingError>)->Void) {
-        
-        let parameter: [String: String] = [
-            "name": name,
-            "country": country ,
-            "email": eamil,
-            "password": password,
-            "dateOfBirth": dateOfBirth
-        ]
-        
+            let parameter: [String: String] = [
+                "name": name,
+                "country": country ,
+                "email": eamil,
+                "password": password,
+                "dateOfBirth": dateOfBirth
+            ]
         AF.request("https://sha256-1f39a1226a97.onrender.com/api/v1/auth/register", method: .post, parameters: parameter, encoding: JSONEncoding.default).response { response in
             
             guard let _ = response.error else {

@@ -39,10 +39,10 @@ class LoginVC: UIViewController {
             switch result {
             case .success(let success):
                 print(success)
-                print("goingto norway")
+                print("success")
                 self.goToTabBarViewController()
             case .failure(let failure):
-                print("failed , shit")
+                print("failed")
                 print(failure)
             }
         }
@@ -76,7 +76,7 @@ class LoginVC: UIViewController {
     //MARK: - @IBActions
     @IBAction func signInBtnTapped(_ sender: UIButton) {
         print("btnatapped")
-        guard isValidDate() else { return }
+        guard isValidDate() else {return}
         loginUser()
        
     }
