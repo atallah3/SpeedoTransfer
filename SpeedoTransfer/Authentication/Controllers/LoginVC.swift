@@ -20,6 +20,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         configureRegisterVC()
         showRightImageIcon()
+        UserManager.shared().isLoggedin = false
     }
     
     //MARK: - Functions

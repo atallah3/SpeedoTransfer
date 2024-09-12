@@ -13,6 +13,7 @@ class STTabBarController: UITabBarController {
         super.viewDidLoad()
         setupViewControllers()
         customizeTabBarAppearance()
+        UserManager.shared().isLoggedin = true
     }
     
 

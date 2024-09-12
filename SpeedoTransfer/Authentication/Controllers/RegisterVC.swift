@@ -22,6 +22,7 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureRegisterVC()
+        UserManager.shared().isOpendBefore = true
     //MARK: - handle images on textFields
         let userIcon = UIImage(named: "user")
         addrightimage(txtField: nameTF, andimage: userIcon!)
